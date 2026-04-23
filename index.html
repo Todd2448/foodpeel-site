@@ -33,67 +33,81 @@
   <!-- ===== HERO ===== -->
   <section class="hero">
     <div class="container">
-      <div class="hero-badge">
-        <span class="hero-badge-dot"></span>
-        Now accepting early access signups
-      </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; padding: 40px 0;">
+        <!-- Left: hero text + form -->
+        <div>
+          <div class="hero-badge">
+            <span class="hero-badge-dot"></span>
+            Now accepting early access signups
+          </div>
 
-      <h1 class="hero-headline">
-        Finally Know What You're<br />
-        <span class="highlight">Actually Eating.</span>
-      </h1>
+          <h1 class="hero-headline">
+            Finally Know What You're<br />
+            <span class="highlight">Actually Eating.</span>
+          </h1>
 
-      <p class="hero-sub">
-        Scan any grocery product. Get an instant safety rating. No chemistry degree required.
-        Coming soon to iOS &amp; Android.
-      </p>
+          <p class="hero-sub">
+            Scan any grocery product. Get an instant safety rating. No chemistry degree required.
+            Coming soon to iOS &amp; Android.
+          </p>
 
-      <div class="hero-platforms">
-        <span class="platform-badge">📱 iOS</span>
-        <span class="platform-badge">🤖 Android</span>
-        <span style="margin-left: 4px; font-size: 13px; color: #4b5563;">· Coming Soon</span>
-      </div>
+          <div class="hero-platforms">
+            <span class="platform-badge">📱 iOS</span>
+            <span class="platform-badge">🤖 Android</span>
+            <span style="margin-left: 4px; font-size: 13px; color: #4b5563;">· Coming Soon</span>
+          </div>
 
-      <form
-        id="hero-form"
-        class="email-form"
-        action="https://formspree.io/f/mwvwjjoq"
-        method="POST"
-        style="margin-top: 28px;"
-      >
-        <input type="hidden" name="_subject" value="FoodPeel Early Access Signup" />
-        <input type="hidden" name="source" value="foodpeel-landing" />
-        <input
-          type="email"
-          name="email"
-          placeholder="Your email address"
-          required
-          autocomplete="email"
-        />
-        <button type="submit" class="btn-primary">Get Early Access →</button>
-      </form>
-      <p class="form-note">Free forever plan included. <span>No spam, ever.</span></p>
+          <form
+            id="hero-form"
+            class="email-form"
+            action="https://formspree.io/f/mwvwjjoq"
+            method="POST"
+            style="margin-top: 28px;"
+          >
+            <input type="hidden" name="_subject" value="FoodPeel Early Access Signup" />
+            <input type="hidden" name="source" value="foodpeel-landing" />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your email address"
+              required
+              autocomplete="email"
+            />
+            <button type="submit" class="btn-primary">Get Early Access →</button>
+          </form>
+          <p class="form-note">Free forever plan included. <span>No spam, ever.</span></p>
 
-      <div class="social-proof-banner">
-        <div class="proof-avatars">
-          <div class="proof-avatar">👩</div>
-          <div class="proof-avatar">👨</div>
-          <div class="proof-avatar">👩‍🦱</div>
-          <div class="proof-avatar">🧑</div>
+          <div class="social-proof-banner">
+            <div class="proof-avatars">
+              <div class="proof-avatar">👩</div>
+              <div class="proof-avatar">👨</div>
+              <div class="proof-avatar">👩‍🦱</div>
+              <div class="proof-avatar">🧑</div>
+            </div>
+            <span>Join <span class="proof-count">247 people</span> already on the early access list</span>
+          </div>
         </div>
-        <span>Join <span class="proof-count">247 people</span> already on the early access list</span>
+
+        <!-- Right: video -->
+        <div>
+          <div style="position: relative; border-radius: 16px; overflow: hidden; box-shadow: 0 0 40px rgba(34,197,94,0.25); background: #000; aspect-ratio: 1/1;">
+            <video controls playsinline preload="metadata"
+              style="width: 100%; height: 100%; display: block;">
+              <source src="videos/foodpeel-main.mp4" type="video/mp4">
+            </video>
+          </div>
+          <p style="text-align: center; color: #4b7a4b; font-size: 1rem; margin-top: 12px;">▶ Watch — Why we built FoodPeel (2 min)</p>
+        </div>
       </div>
 
-      <!-- FoodPeel Explainer Video -->
-      <div style="max-width: 500px; margin: 48px auto 0;">
-        <div style="position: relative; border-radius: 16px; overflow: hidden; box-shadow: 0 0 40px rgba(34,197,94,0.2); background: #000; aspect-ratio: 1/1;">
-          <video controls playsinline preload="metadata"
-            style="width: 100%; height: 100%; display: block;">
-            <source src="videos/foodpeel-explainer.mp4" type="video/mp4">
-          </video>
-        </div>
-        <p style="text-align: center; color: #4b7a4b; font-size: 0.85rem; margin-top: 12px;">▶ See how FoodPeel works (60 sec)</p>
-      </div>
+      <style>
+        @media (max-width: 768px) {
+          div[style*="grid-template-columns: 1fr 1fr"] {
+            grid-template-columns: 1fr !important;
+            gap: 32px !important;
+          }
+        }
+      </style>
 
     </div>
   </section>
