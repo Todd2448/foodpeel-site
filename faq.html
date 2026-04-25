@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="FoodPeel FAQ — Your questions answered about the app, food safety ratings, AI ingredient scanning, privacy, pricing, and more." />
+  <meta property="og:title" content="FoodPeel FAQ — Your Questions Answered" />
+  <meta property="og:description" content="Everything you want to know about FoodPeel: how ratings work, what AI scanning means, privacy, pricing, and when the app launches." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://foodpeel.com/faq.html" />
+  <meta property="og:image" content="https://foodpeel.com/images/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://foodpeel.com/images/og-image.png" />
+  <link rel="canonical" href="https://foodpeel.com/faq.html" />
+  <title>FoodPeel FAQ — Your Questions Answered</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "What is FoodPeel?", "acceptedAnswer": {"@type": "Answer", "text": "FoodPeel is a mobile app that lets you scan any grocery product barcode and instantly see a plain-English safety rating for every ingredient — no chemistry degree required."}},
+      {"@type": "Question", "name": "Is FoodPeel free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. FoodPeel has a free tier that includes basic scanning and ingredient ratings. The Pro plan unlocks unlimited scans, full ingredient breakdowns, and cleaner product alternatives."}},
+      {"@type": "Question", "name": "How does FoodPeel rate ingredients?", "acceptedAnswer": {"@type": "Answer", "text": "FoodPeel uses a five-tier rating system: Clean, Mostly Clean, Iffy, Dirty, and Toxic. Ratings are based on published scientific research, regulatory decisions, and peer-reviewed studies."}}
+    ]
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .faq-hero {
+      padding: 140px 0 60px;
+      text-align: center;
+    }
+    .faq-wrap {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 0 24px 100px;
+    }
+    .faq-category {
+      margin-bottom: 56px;
+    }
+    .faq-category-title {
+      font-size: 14px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent-green);
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+    }
+    .faq-item {
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+      margin-bottom: 12px;
+      transition: border-color 0.2s;
+    }
+    .faq-item.open {
+      border-color: var(--border-accent);
+    }
+    .faq-question {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 22px 24px;
+      cursor: pointer;
+      gap: 16px;
+      background: var(--bg-card);
+      transition: background 0.2s;
+      list-style: none;
+      user-select: none;
+    }
+    .faq-question:hover {
+      background: var(--bg-card-hover);
+    }
+    .faq-question-text {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text-primary);
+      line-height: 1.35;
+    }
+    .faq-toggle {
+      font-size: 22px;
+      color: var(--accent-green);
+      flex-shrink: 0;
+      transition: transform 0.25s;
+      line-height: 1;
+    }
+    .faq-item.open .faq-toggle {
+      transform: rotate(45deg);
+    }
+    .faq-answer {
+      display: none;
+      padding: 0 24px 24px;
+      background: var(--bg-card);
+    }
+    .faq-item.open .faq-answer {
+      display: block;
+    }
+    .faq-answer p {
+      font-size: 17px;
+      color: #9ca3af;
+      line-height: 1.75;
+      margin: 0 0 14px;
+    }
+    .faq-answer p:last-child {
+      margin-bottom: 0;
+    }
+    .faq-answer ul {
+      font-size: 17px;
+      color: #9ca3af;
+      line-height: 1.7;
+      padding-left: 20px;
+      margin: 0 0 14px;
+    }
+    .faq-answer li {
+      margin-bottom: 8px;
+    }
+    .faq-answer strong {
+      color: var(--text-primary);
+    }
+    .faq-answer a {
+      color: var(--accent-green);
+      text-decoration: none;
+    }
+    .faq-answer a:hover { text-decoration: underline; }
+    .faq-cta {
+      background: var(--bg-card);
+      border: 1px solid var(--border-accent);
+      border-radius: 20px;
+      padding: 48px 40px;
+      text-align: center;
+      margin-top: 64px;
+    }
+    .faq-cta h2 {
+      font-size: 28px;
+      font-weight: 900;
+      color: var(--text-primary);
+      margin-bottom: 12px;
+      letter-spacing: -0.02em;
+    }
+    .faq-cta p {
+      font-size: 17px;
+      color: #9ca3af;
+      margin-bottom: 28px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav>
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+          <span class="nav-logo-emoji">🥦</span>
+          <span class="nav-logo-text">Food<span>Peel</span></span>
+          <span class="nav-tagline">Peel back the label.</span>
+        </a>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="blog/" class="nav-link">Blog</a>
+          <a href="ingredient-lookup.html" class="nav-link">Ingredients</a>
+          <a href="pricing.html" class="nav-link">Pricing</a>
+          <a href="faq.html" class="nav-link" style="color: var(--accent-green);">FAQ</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="early-access.html" class="nav-cta">Get Early Access →</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="faq-hero">
+    <div class="container">
+      <span class="section-label">Frequently Asked Questions</span>
+      <h1 class="section-title" style="font-size: clamp(30px, 5vw, 52px); max-width: 640px; margin: 0 auto 16px;">
+        Got Questions?<br /><span style="color: var(--accent-green);">We've Got Answers.</span>
+      </h1>
+      <div class="divider center"></div>
+      <p class="section-sub" style="text-align: center; margin: 0 auto;">
+        Everything you need to know about FoodPeel — how it works, how ratings are made, privacy, pricing, and more.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== FAQ CONTENT ===== -->
+  <div class="container">
+    <div class="faq-wrap">
+
+      <!-- ABOUT THE APP -->
+      <div class="faq-category">
+        <div class="faq-category-title">📱 About FoodPeel</div>
+
+        <div class="faq-item" id="q1">
+          <div class="faq-question" onclick="toggleFaq('q1')">
+            <span class="faq-question-text">What is FoodPeel and how does it work?</span>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>FoodPeel is a mobile app that helps you make smarter choices at the grocery store. Here's how it works:</p>
+            <ul>
+              <li><strong>Scan any barcode</strong> — point your phone at any packaged food product</li>
+              <li><strong>Get an instant rating</strong> — see a color-coded safety rating and plain-English breakdown of every ingredient in seconds</li>
+              <li><strong>Find better options</strong> — FoodPeel suggests cleaner alternatives so you don't have to compromise on taste or budget</li>
+            </ul>
+            <p>No chemistry degree required. No endless Googling. Just the answer — right when you need it in the grocery aisle.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" id="q2">
+          <div class="faq-question" onclick="toggleFaq('q2')">
+            <span class="faq-question-text">When will FoodPeel be available?</span>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>FoodPeel is currently in development. We're building the iOS and Android apps and plan to launch in 2026. We're accepting early access signups now.</p>
+            <p><strong>Early access members get the Pro plan free for 3 months at launch.</strong> That's a $25 value, yours at no cost just for signing up before we launch. <a href="early-access.html">Join the early access list →</a></p>
+          </div>
+        </div>
+
+        <div class="faq-item" id="q3">
+          <div class="faq-question" onclick="toggleFaq('q3')">
+            <span class="faq-question-text">What platforms will FoodPeel be on?</span>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>FoodPeel will launch on iOS (iPhone) and Android simultaneously. We're targeting both platforms from day one so no one gets left behind.</p>
+            <p>We're also exploring a web version for users who want to look up products from their desktop — though the barcode scanning feature will be mobile-only initially.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" id="q4">
+          <div class="faq-question" onclick="toggleFaq('q4')">
+            <span class="faq-question-text">How does FoodPeel get its product data?</span>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>FoodPeel uses a combination of public food databases (including the USDA National Nutrient Database, Open Food Facts, and commercial databases) and our own ingredient analysis layer to build complete product profiles.</p>
+            <p>When you scan a barcode, FoodPeel retrieves the product's ingredient list, then runs each ingredient through our safety rating engine to produce a complete breakdown. The database is updated continuously as new products are added and formulations change.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- RATINGS & SAFETY -->
+      <div class="faq-category">
+        <div class="faq-category-title">⭐ Ratings & Food Safety</div>
+
+        <div class="faq-item" id="q5">
+          <div class="faq-question" onclick="toggleFaq('q5')">
+            <span class="faq-question-text">How does FoodPeel decide what's "safe" vs. "dirty"?</span>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Every rating is grounded in published science — not trends, not opinion, not wellness influencer takes. Our rating criteria include:</p>
+            <ul>
+              <li><strong>Regulatory status</strong> — Is this ingredient banned or restricted in other countries with stricter standards (EU, Japan, Canada)?</li>
+              <li><strong>Peer-reviewed research</strong> — What do large-scale human studies show? What does the animal research suggest?</li>
+              <li><strong>Expert consensus</strong> — What do toxicologists, nutritional scientists, and public health researchers generally agree on?</li>
+              <li><strong>Dose and context</strong> — The dose makes the poison. Something harmful at high doses may be acceptable at trace levels.</li>
+            </ul>
+            <p>We show our reasoning. Every rating links to the evidence so you can evaluate it yourself. We don't have an agenda — we follow the science.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" id="q6">
+          <div class="faq-question" onclick="toggleFaq('q6')">
+            <span class="faq-question-text">What are FoodPeel's five rating levels?</span>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>FoodPeel uses five ratings — no middle-ground ambiguity:</p>
+            <ul>
+              <li><strong>🟢 Clean</strong> — Real ingredients, nothing concerning. Eat with zero guilt.</li>
+              <li><strong>🟡 Mostly Clean</strong> — Generally good, with a minor ingredient or two worth knowing about. Fine to eat regularly.</li>
+              <li><strong>🟠 Iffy</strong> — Some concerning additives present. Okay occasionally, not daily.</li>
+              <li><strong>🔴 Dirty</strong> — Multiple red-flag ingredients. Consider a cleaner alternative.</li>
+              <li><strong>☠️ Toxic</strong> — Serious concerns. Contains ingredients linked to real health risks. Avoid when possible.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="faq-item" id="q7">
+          <div class="faq-question" onclick="toggleFaq('q7')">
+            <span class="faq-question-text">If the FDA says it's safe, why does FoodPeel rate it differently?</span>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>FDA "generally recognized as safe" (GRAS) status was mostly established decades ago, often based on limited studies. The FDA has a principle of regulatory conservatism — they typically don't remove an ingredient unless there's very strong evidence of harm at typical consumption levels.</p>
+            <p>Other regulatory bodies with more precautionary standards — particularly the European Food Safety Authority (EFSA) and Japan's MHLW — have banned or restricted hundreds of additives that remain legal in the US. We look at the full global picture, not just the FDA.</p>
+            <p>Examples: Red 3 (Erythrosine) caused thyroid tumors in rats and was banned from cosmetics in 1990 — but remained in food until 2025. Potassium Bromate is banned in the EU, UK, Canada, Japan, and Brazil, but still legal in most US states. BVO was linked to health concerns for decades before the FDA finally acted in 2024.</p>
+            <p>We think you deserve to know what the full scientific picture shows, not just what the FDA has gotten around to addressing.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" id="q8">
+          <div class="faq-question" onclick="toggleFaq('q8')">
+            <span class="faq-question-text">Does FoodPeel have a bias against processed food?</span>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>We follow the evidence. And the evidence on ultra-processed foods — as a category — is not good. Multiple large-scale epidemiological studies have linked ultra-processed food consumption to higher rates of obesity, cardiovascular disease, type 2 diabetes, certain cancers, and all-cause mortality.</p>
+            <p>That said, we rate individual products on their merits. A minimally processed protein bar with clean ingredients can get a "Clean" rating. A heavily processed product with artificial dyes, synthetic preservatives, and trans fats can get a "Dirty" rating. The category doesn't determine the rating — the actual ingredients do.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- AI SCANNING -->
+      <div class="faq-category">
+        <div class="faq-category-title">🤖 AI Ingredient Scanning</div>
+
+        <div class="faq-item" id="q9">
+          <div class="faq-question" onclick="toggleFaq('q9')">
+            <span class="faq-question-text">What does "AI ingredient scanning" actually mean?</span>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>When a product isn't in our database, FoodPeel's AI can analyze the ingredient list visually — you can photograph the ingredient panel if the barcode doesn't produce results. The AI reads the ingredient list and cross-references each ingredient against our safety database.</p>
+            <p>AI also helps with ingredient disambiguation — knowing that "ascorbic acid" = vitamin C, or that "tocopherols" = vitamin E, or that 15 different names on a label all mean "sugar." This is a massive part of label transparency that most databases miss.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" id="q10">
+          <div class="faq-question" onclick="toggleFaq('q10')">
+            <span class="faq-question-text">Can I trust AI to make food safety decisions?</span>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>FoodPeel doesn't use AI to make food safety decisions — that work is done by human researchers, scientists, and regulatory bodies. What AI does is help us process, organize, and deliver that research at scale so you can access it instantly from your phone.</p>
+            <p>Think of it like this: the knowledge in a medical textbook isn't wrong because someone used a computer to help format it. The AI handles the lookup and delivery; the science behind the ratings is human-verified.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- PRIVACY -->
+      <div class="faq-category">
+        <div class="faq-category-title">🔒 Privacy & Data</div>
+
+        <div class="faq-item" id="q11">
+          <div class="faq-question" onclick="toggleFaq('q11')">
+            <span class="faq-question-text">What data does FoodPeel collect?</span>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>We collect what's needed to run the app and nothing more:</p>
+            <ul>
+              <li><strong>Email address</strong> — to send you your early access confirmation and launch notification</li>
+              <li><strong>Scan history</strong> (Pro feature, optional) — to enable history review and personalized recommendations</li>
+              <li><strong>Anonymous usage analytics</strong> — to understand which features are used, not who's using them</li>
+            </ul>
+            <p>We don't sell your data. We don't share it with food companies. We're not in the business of building advertising profiles on what you eat. See our full <a href="privacy.html">Privacy Policy →</a></p>
+          </div>
+        </div>
+
+        <div class="faq-item" id="q12">
+          <div class="faq-question" onclick="toggleFaq('q12')">
+            <span class="faq-question-text">Do you share scan data with food companies or advertisers?</span>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p><strong>No.</strong> Full stop. We are not in the advertising business and our business model doesn't depend on selling user data.</p>
+            <p>FoodPeel makes money through Pro subscriptions — not by selling your purchase habits or dietary information to food companies, supermarkets, or advertisers. A tool you trust to tell you the truth about food can't also be secretly monetizing your food choices. Those two things are incompatible.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- PRICING -->
+      <div class="faq-category">
+        <div class="faq-category-title">💰 Pricing & Plans</div>
+
+        <div class="faq-item" id="q13">
+          <div class="faq-question" onclick="toggleFaq('q13')">
+            <span class="faq-question-text">Is FoodPeel really free?</span>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, and we mean it. The free plan includes enough to make genuinely better grocery choices:</p>
+            <ul>
+              <li>Scan up to 10 products per day</li>
+              <li>See the overall safety rating for any product</li>
+              <li>View a summary of concerning ingredients</li>
+              <li>Access our ingredient database</li>
+            </ul>
+            <p>We believe everyone deserves to know what's in their food — not just people who can afford a premium subscription. The free plan is free forever, not a free trial.</p>
+            <p>See the full comparison on our <a href="pricing.html">Pricing page →</a></p>
+          </div>
+        </div>
+
+        <div class="faq-item" id="q14">
+          <div class="faq-question" onclick="toggleFaq('q14')">
+            <span class="faq-question-text">What do I get with Pro?</span>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>The Pro plan ($2.99/month or $24.99/year) unlocks the full FoodPeel experience:</p>
+            <ul>
+              <li><strong>Unlimited scans</strong> — no daily limits</li>
+              <li><strong>Full ingredient breakdowns</strong> — see every ingredient rated individually, not just the overall product score</li>
+              <li><strong>Cleaner alternatives</strong> — FoodPeel suggests better products available at the same store</li>
+              <li><strong>Scan history</strong> — review everything you've scanned</li>
+              <li><strong>Dietary filters</strong> — filter by allergens, diet type (vegan, keto, etc.), and specific ingredients to avoid</li>
+              <li><strong>Family sharing</strong> — (coming soon) share an account with your household</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="faq-item" id="q15">
+          <div class="faq-question" onclick="toggleFaq('q15')">
+            <span class="faq-question-text">What do early access members get?</span>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>People who sign up for early access before we launch get:</p>
+            <ul>
+              <li><strong>Pro free for 3 months</strong> — a $9 value, applied automatically to your account at launch</li>
+              <li><strong>First notification</strong> — we'll email you the moment the app goes live on the App Store and Google Play</li>
+              <li><strong>Roadmap input</strong> — early members can vote on features and tell us what matters most to them</li>
+            </ul>
+            <p>There's no catch and no credit card required. Just <a href="early-access.html">sign up with your email →</a> and you're on the list.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CTA -->
+      <div class="faq-cta">
+        <h2>Still have questions?</h2>
+        <p>We're a real team building something real. Email us and a human will respond.</p>
+        <a href="mailto:hello@foodpeel.com" class="btn-primary" style="display: inline-block; text-decoration: none; padding: 14px 28px; margin-bottom: 16px;">Email Us →</a>
+        <br />
+        <a href="early-access.html" style="font-size: 15px; color: var(--accent-green); text-decoration: none;">Or join the early access list →</a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-copy">© 2026 FoodPeel · Built with <span class="footer-heart">❤️</span> for families</p>
+        <div class="footer-links">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="faq.html" style="color: var(--accent-green);">FAQ</a>
+          <a href="mailto:hello@foodpeel.com">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleFaq(id) {
+      const item = document.getElementById(id);
+      const isOpen = item.classList.contains('open');
+      // Close all
+      document.querySelectorAll('.faq-item').forEach(el => el.classList.remove('open'));
+      // Open if wasn't open
+      if (!isOpen) item.classList.add('open');
+    }
+  </script>
+
+</body>
+</html>
