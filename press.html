@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="FoodPeel press page — media coverage, press kit, press inquiries, and facts about the food safety problem in America." />
+  <meta property="og:title" content="FoodPeel Press & Media — Food Safety Transparency App" />
+  <meta property="og:description" content="Press resources, media inquiries, and the food safety statistics that make FoodPeel's mission urgent." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://foodpeel.com/press.html" />
+  <meta property="og:image" content="https://foodpeel.com/images/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="FoodPeel Press & Media" />
+  <meta name="twitter:image" content="https://foodpeel.com/images/og-image.png" />
+  <link rel="canonical" href="https://foodpeel.com/press.html" />
+  <title>Press & Media — FoodPeel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .press-hero {
+      padding: 140px 0 80px;
+      text-align: center;
+    }
+    .stats-section {
+      padding: 0 0 100px;
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+      margin-top: 56px;
+    }
+    .stat-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 36px 28px;
+      text-align: center;
+    }
+    .stat-number {
+      font-size: 44px;
+      font-weight: 900;
+      color: var(--accent-green);
+      letter-spacing: -0.04em;
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+    .stat-label {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 8px;
+    }
+    .stat-source {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+    .news-section {
+      padding: 0 0 80px;
+    }
+    .news-placeholder {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 80px 40px;
+      text-align: center;
+    }
+    .news-placeholder-icon {
+      font-size: 56px;
+      margin-bottom: 24px;
+    }
+    .news-placeholder h3 {
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 16px;
+    }
+    .news-placeholder p {
+      font-size: 16px;
+      color: #9ca3af;
+      max-width: 500px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+    .press-kit-section {
+      padding: 0 0 80px;
+    }
+    .press-kit-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+    .press-kit-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px 24px;
+      text-align: center;
+      cursor: pointer;
+      transition: border-color 0.2s;
+    }
+    .press-kit-card:hover {
+      border-color: var(--border-accent);
+    }
+    .press-kit-icon {
+      font-size: 36px;
+      margin-bottom: 16px;
+    }
+    .press-kit-name {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 8px;
+    }
+    .press-kit-desc {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.55;
+      margin-bottom: 16px;
+    }
+    .press-kit-badge {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--accent-green);
+      background: rgba(34,197,94,0.1);
+      border: 1px solid rgba(34,197,94,0.2);
+      border-radius: 100px;
+      padding: 4px 14px;
+    }
+    .contact-section {
+      padding: 0 0 100px;
+    }
+    .contact-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-accent);
+      border-radius: 24px;
+      padding: 64px 56px;
+      max-width: 680px;
+      margin: 0 auto;
+    }
+    @media (max-width: 640px) {
+      .contact-card { padding: 40px 28px; }
+    }
+    .contact-card h2 {
+      font-size: 32px;
+      font-weight: 900;
+      color: var(--text-primary);
+      letter-spacing: -0.03em;
+      margin-bottom: 12px;
+    }
+    .contact-card .sub {
+      font-size: 16px;
+      color: #9ca3af;
+      margin-bottom: 40px;
+      line-height: 1.65;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      display: block;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 8px;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      background: var(--bg-input);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 13px 16px;
+      font-size: 16px;
+      color: var(--text-primary);
+      font-family: inherit;
+      transition: border-color 0.2s;
+      box-sizing: border-box;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--border-accent);
+    }
+    .form-group textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    @media (max-width: 500px) {
+      .form-row { grid-template-columns: 1fr; }
+    }
+    .about-section {
+      padding: 0 0 80px;
+    }
+    .about-inner {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+    .about-inner p {
+      font-size: 17px;
+      color: #9ca3af;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+    .about-inner strong {
+      color: var(--text-primary);
+    }
+    .boilerplate {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px 32px;
+      margin-top: 32px;
+    }
+    .boilerplate-label {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent-green);
+      margin-bottom: 14px;
+      display: block;
+    }
+    .boilerplate p {
+      font-size: 15px;
+      color: #d1d5db;
+      line-height: 1.7;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav>
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+          <span class="nav-logo-emoji">🥦</span>
+          <span class="nav-logo-text">Food<span>Peel</span></span>
+          <span class="nav-tagline">Peel back the label.</span>
+        </a>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="how-it-works.html" class="nav-link">How It Works</a>
+          <a href="videos.html" class="nav-link">Videos</a>
+          <a href="blog/" class="nav-link">Blog</a>
+          <a href="ingredient-lookup.html" class="nav-link">Ingredients</a>
+          <a href="pricing.html" class="nav-link">Pricing</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="early-access.html" class="nav-cta">Get Early Access →</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="press-hero">
+    <div class="container">
+      <span class="section-label">Press & Media</span>
+      <h1 class="section-title" style="font-size: clamp(32px, 5vw, 56px); max-width: 700px; margin: 0 auto 16px;">
+        FoodPeel<br /><span style="color: var(--accent-green);">in the News</span>
+      </h1>
+      <div class="divider center"></div>
+      <p class="section-sub" style="text-align: center; margin: 0 auto; max-width: 560px;">
+        Resources for journalists and media covering food safety, consumer health apps, and ingredient transparency. Press kit, stats, and contact below.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT FOODPEEL ===== -->
+  <section class="about-section">
+    <div class="container">
+      <div class="about-inner">
+        <span class="section-label" style="display: block; margin-bottom: 16px;">About FoodPeel</span>
+        <h2 class="section-title" style="font-size: clamp(26px, 4vw, 40px); text-align: left; margin-bottom: 24px;">
+          The Mission
+        </h2>
+        <p>
+          FoodPeel is a mobile application that allows anyone to scan a grocery product barcode and instantly receive a plain-English safety rating for every ingredient in that product. The goal is radical ingredient transparency: giving consumers access to the same information that food scientists have, presented in a way that doesn't require a chemistry degree to understand.
+        </p>
+        <p>
+          The app uses a red/yellow/green rating system — green for safe ingredients, yellow for ingredients that warrant awareness, red for ingredients with significant research concerns or that are banned in other countries. Each rating links to plain-English explanations and, where relevant, to better product alternatives.
+        </p>
+        <p>
+          <strong>FoodPeel is pre-launch, currently accepting early access signups for its iOS and Android app.</strong> The company was founded in 2026 with the conviction that the information asymmetry between food manufacturers and consumers is a public health problem — and that technology is the most scalable solution.
+        </p>
+
+        <div class="boilerplate">
+          <span class="boilerplate-label">Boilerplate (for use in press)</span>
+          <p>FoodPeel is a mobile app that brings instant ingredient transparency to grocery shopping. Using barcode scanning and an AI-powered ingredient database, FoodPeel gives consumers a plain-English safety rating for every ingredient in any packaged food product. FoodPeel is pre-launch and accepting early access signups at foodpeel.com. Available soon on iOS and Android.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== THE PROBLEM IN NUMBERS ===== -->
+  <section class="stats-section">
+    <div class="container">
+      <div style="text-align: center; max-width: 600px; margin: 0 auto;">
+        <span class="section-label">The Food Safety Problem</span>
+        <h2 class="section-title" style="font-size: clamp(26px, 4vw, 40px); margin-bottom: 16px;">
+          Why This Matters Now
+        </h2>
+        <p style="font-size: 17px; color: #9ca3af; line-height: 1.7;">
+          The data behind FoodPeel's mission. These are the numbers that make food ingredient transparency urgent.
+        </p>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number">73%</div>
+          <div class="stat-label">of the US food supply is ultra-processed</div>
+          <div class="stat-source">NOVA classification analysis, 2023 NHANES data</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">3–5 lbs</div>
+          <div class="stat-label">food additives consumed per American per year</div>
+          <div class="stat-source">FDA estimates; Center for Food Safety</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">10,000+</div>
+          <div class="stat-label">chemicals allowed in US food</div>
+          <div class="stat-source">FDA GRAS (Generally Recognized As Safe) database</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">1,300+</div>
+          <div class="stat-label">ingredients legal in the US but banned in EU</div>
+          <div class="stat-source">Comparative regulatory analysis, EFSA vs FDA approvals</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">$7B</div>
+          <div class="stat-label">spent annually on gluten-free products by consumers who don't need them</div>
+          <div class="stat-source">Grand View Research market report</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">68%</div>
+          <div class="stat-label">of parents report being confused by food labels</div>
+          <div class="stat-source">International Food Information Council 2024 survey</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">56</div>
+          <div class="stat-label">different names sugar can appear under on ingredient labels</div>
+          <div class="stat-source">UCSF Sugar Science research compilation</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">6–10 yrs</div>
+          <div class="stat-label">average wait for celiac disease diagnosis from first symptoms</div>
+          <div class="stat-source">Celiac Disease Foundation</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRESS KIT ===== -->
+  <section class="press-kit-section">
+    <div class="container">
+      <div style="text-align: center; max-width: 600px; margin: 0 auto;">
+        <span class="section-label">Press Kit</span>
+        <h2 class="section-title" style="font-size: clamp(26px, 4vw, 40px); margin-bottom: 16px;">
+          Media Resources
+        </h2>
+        <p style="font-size: 17px; color: #9ca3af; line-height: 1.7;">
+          Logos, screenshots, and brand assets. Full press kit available on request by emailing press@foodpeel.com.
+        </p>
+      </div>
+      <div class="press-kit-grid">
+        <div class="press-kit-card">
+          <div class="press-kit-icon">🖼️</div>
+          <div class="press-kit-name">Logo Pack</div>
+          <p class="press-kit-desc">FoodPeel logo in SVG, PNG, and dark/light variants. Horizontal and stacked versions.</p>
+          <span class="press-kit-badge">Request via email</span>
+        </div>
+        <div class="press-kit-card">
+          <div class="press-kit-icon">📱</div>
+          <div class="press-kit-name">App Screenshots</div>
+          <p class="press-kit-desc">Pre-launch mockups and UI screens showing the scanning interface and ingredient rating views.</p>
+          <span class="press-kit-badge">Request via email</span>
+        </div>
+        <div class="press-kit-card">
+          <div class="press-kit-icon">📋</div>
+          <div class="press-kit-name">Fact Sheet</div>
+          <p class="press-kit-desc">One-page summary of FoodPeel's mission, product, market, and founding team.</p>
+          <span class="press-kit-badge">Request via email</span>
+        </div>
+        <div class="press-kit-card">
+          <div class="press-kit-icon">🎙️</div>
+          <div class="press-kit-name">Interview Requests</div>
+          <p class="press-kit-desc">Available for podcast appearances, print interviews, and broadcast media on food safety topics.</p>
+          <span class="press-kit-badge">Book via form below</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COVERAGE PLACEHOLDER ===== -->
+  <section class="news-section">
+    <div class="container">
+      <div class="news-placeholder">
+        <div class="news-placeholder-icon">📰</div>
+        <h3>Coverage Coming</h3>
+        <p>FoodPeel is pre-launch and building toward its public debut. Media coverage will be featured here as it goes live. Journalists interested in covering the food transparency story are encouraged to reach out below.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRESS CONTACT FORM ===== -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-card">
+        <span class="section-label" style="display: block; margin-bottom: 12px;">Press Inquiries</span>
+        <h2>Get in Touch</h2>
+        <p class="sub">For media inquiries, interview requests, press kit access, or expert commentary on food safety topics, reach out below or email press@foodpeel.com directly.</p>
+
+        <form action="https://formspree.io/f/mwvwjjoq" method="POST">
+          <input type="hidden" name="_subject" value="FoodPeel Press Inquiry" />
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="press-name">Your Name</label>
+              <input type="text" id="press-name" name="name" placeholder="Jane Smith" required />
+            </div>
+            <div class="form-group">
+              <label for="press-outlet">Media Outlet / Publication</label>
+              <input type="text" id="press-outlet" name="outlet" placeholder="The Daily News" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="press-email">Email Address</label>
+            <input type="email" id="press-email" name="email" placeholder="jane@publication.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="press-type">Type of Inquiry</label>
+            <select id="press-type" name="inquiry_type">
+              <option value="">Select one...</option>
+              <option value="interview">Interview Request</option>
+              <option value="press-kit">Press Kit Request</option>
+              <option value="story">Story Pitch / Feature Coverage</option>
+              <option value="expert">Expert Commentary on Food Safety</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="press-message">Tell us about your project</label>
+            <textarea id="press-message" name="message" placeholder="Publication, topic, deadline, angle, or any other relevant details..."></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary" style="width: 100%; font-size: 16px; padding: 16px;">
+            Send Inquiry →
+          </button>
+          <p style="text-align: center; font-size: 13px; color: var(--text-muted); margin-top: 14px;">
+            We typically respond to media inquiries within 24 hours.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-copy">
+          © 2026 FoodPeel · Built with <span class="footer-heart">❤️</span> for families
+        </p>
+        <div class="footer-links">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="faq.html">FAQ</a>
+          <a href="about.html">About</a>
+          <a href="mailto:press@foodpeel.com">Press</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

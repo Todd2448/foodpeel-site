@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Watch FoodPeel educational videos — learn how the app works, why food transparency matters, and what's really in your food." />
+  <meta property="og:title" content="FoodPeel Videos — Learn What's Really In Your Food" />
+  <meta property="og:description" content="Watch FoodPeel explainer videos and learn how we're changing the way people understand their food." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://foodpeel.com/videos.html" />
+  <meta property="og:image" content="https://foodpeel.com/images/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="FoodPeel Videos — Learn What's Really In Your Food" />
+  <meta name="twitter:image" content="https://foodpeel.com/images/og-image.png" />
+  <link rel="canonical" href="https://foodpeel.com/videos.html" />
+  <title>Videos — FoodPeel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .videos-hero {
+      padding: 140px 0 60px;
+      text-align: center;
+    }
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 36px;
+      padding-bottom: 100px;
+    }
+    .video-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      overflow: hidden;
+      transition: border-color 0.25s, transform 0.25s;
+    }
+    .video-card:hover {
+      border-color: var(--border-accent);
+      transform: translateY(-4px);
+    }
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      background: #000;
+    }
+    .video-wrapper video {
+      width: 100%;
+      display: block;
+      max-height: 320px;
+      object-fit: cover;
+    }
+    .video-info {
+      padding: 28px 28px 32px;
+    }
+    .video-tag {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent-green);
+      background: rgba(34,197,94,0.1);
+      border-radius: 6px;
+      padding: 3px 10px;
+      display: inline-block;
+      margin-bottom: 14px;
+    }
+    .video-title {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--text-primary);
+      line-height: 1.25;
+      margin-bottom: 12px;
+      letter-spacing: -0.02em;
+    }
+    .video-desc {
+      font-size: 15px;
+      color: #6b7280;
+      line-height: 1.65;
+    }
+    .video-duration {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 16px;
+      font-size: 13px;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+    .video-duration::before {
+      content: '▶';
+      font-size: 10px;
+      color: var(--accent-green);
+    }
+    .featured-video {
+      background: var(--bg-card);
+      border: 1px solid var(--border-accent);
+      border-radius: 24px;
+      overflow: hidden;
+      margin-bottom: 60px;
+    }
+    .featured-video video {
+      width: 100%;
+      display: block;
+      max-height: 500px;
+      object-fit: cover;
+    }
+    .featured-video-info {
+      padding: 36px 40px 40px;
+    }
+    .featured-label {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--accent-green);
+      margin-bottom: 12px;
+      display: block;
+    }
+    .featured-video-info h2 {
+      font-size: 32px;
+      font-weight: 900;
+      color: var(--text-primary);
+      letter-spacing: -0.03em;
+      margin-bottom: 14px;
+      line-height: 1.15;
+    }
+    .featured-video-info p {
+      font-size: 17px;
+      color: #9ca3af;
+      line-height: 1.7;
+      max-width: 680px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav>
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+          <span class="nav-logo-emoji">🥦</span>
+          <span class="nav-logo-text">Food<span>Peel</span></span>
+          <span class="nav-tagline">Peel back the label.</span>
+        </a>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="how-it-works.html" class="nav-link">How It Works</a>
+          <a href="blog/" class="nav-link">Blog</a>
+          <a href="ingredient-lookup.html" class="nav-link">Ingredients</a>
+          <a href="pricing.html" class="nav-link">Pricing</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="early-access.html" class="nav-cta">Get Early Access →</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="videos-hero">
+    <div class="container">
+      <span class="section-label">FoodPeel Videos</span>
+      <h1 class="section-title" style="font-size: clamp(32px, 5vw, 56px); max-width: 700px; margin: 0 auto 16px;">
+        See FoodPeel<br /><span style="color: var(--accent-green);">In Action</span>
+      </h1>
+      <div class="divider center"></div>
+      <p class="section-sub" style="text-align: center; margin: 0 auto;">
+        Short, honest videos explaining how FoodPeel works, what we found in common food products, and why food transparency matters for your family.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== FEATURED VIDEO ===== -->
+  <section style="padding-top: 0;">
+    <div class="container">
+
+      <div class="featured-video">
+        <video controls preload="metadata">
+          <source src="videos/foodpeel-main.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="featured-video-info">
+          <span class="featured-label">⭐ Featured</span>
+          <h2>FoodPeel: Know What's Really In Your Food</h2>
+          <p>The full FoodPeel story — why we built it, how it works, and what it means for the way your family shops for groceries. Scan a barcode. Get the truth. It's that simple.</p>
+        </div>
+      </div>
+
+      <!-- ===== VIDEO GRID ===== -->
+      <div class="video-grid">
+
+        <div class="video-card">
+          <div class="video-wrapper">
+            <video controls preload="metadata">
+              <source src="videos/foodpeel-explainer.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="video-info">
+            <span class="video-tag">🔍 Explainer</span>
+            <div class="video-title">How FoodPeel Rates Every Ingredient</div>
+            <p class="video-desc">A step-by-step walkthrough of FoodPeel's red/yellow/green rating system — how we evaluate every ingredient in any product, and what the colors actually mean for your health.</p>
+            <span class="video-duration">Quick explainer</span>
+          </div>
+        </div>
+
+        <div class="video-card">
+          <div class="video-wrapper">
+            <video controls preload="metadata">
+              <source src="videos/foodpeel-red40.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="video-info">
+            <span class="video-tag">⚠️ Ingredient Deep Dive</span>
+            <div class="video-title">Red 40: The Dye That's Still Everywhere in America</div>
+            <p class="video-desc">Red 40 is one of the most-consumed food dyes in the US. The EU requires warning labels on products that contain it. We dug into the science — here's what we found.</p>
+            <span class="video-duration">Deep dive</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA SECTION ===== -->
+  <section style="padding: 0 0 100px;">
+    <div class="container">
+      <div style="background: var(--bg-card); border: 1px solid var(--border-accent); border-radius: 24px; padding: 60px 40px; text-align: center; max-width: 700px; margin: 0 auto;">
+        <div style="font-size: 48px; margin-bottom: 20px;">📱</div>
+        <h2 style="font-size: clamp(24px, 4vw, 36px); font-weight: 900; color: var(--text-primary); letter-spacing: -0.03em; margin-bottom: 16px;">
+          Ready to Start Scanning?
+        </h2>
+        <p style="font-size: 17px; color: #9ca3af; line-height: 1.7; margin-bottom: 32px; max-width: 480px; margin-left: auto; margin-right: auto;">
+          FoodPeel is coming to iOS and Android. Sign up for early access and get 3 months of Pro free when we launch.
+        </p>
+        <a href="early-access.html" class="btn-primary" style="display: inline-block; text-decoration: none; padding: 16px 32px; font-size: 17px;">
+          Get Early Access →
+        </a>
+        <p style="margin-top: 16px; font-size: 13px; color: var(--text-muted);">No spam. No credit card. Just early access.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-copy">
+          © 2026 FoodPeel · Built with <span class="footer-heart">❤️</span> for families
+        </p>
+        <div class="footer-links">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="faq.html">FAQ</a>
+          <a href="ingredient-lookup.html">Ingredient Lookup</a>
+          <a href="mailto:hello@foodpeel.com">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

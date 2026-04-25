@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="See exactly how FoodPeel works — scan a barcode, get instant AI-powered ingredient ratings in plain English. No chemistry degree required." />
+  <meta property="og:title" content="How FoodPeel Works — Scan. Rate. Know." />
+  <meta property="og:description" content="Scan any grocery product barcode and get an instant safety rating for every ingredient. Here's exactly how it works." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://foodpeel.com/how-it-works.html" />
+  <meta property="og:image" content="https://foodpeel.com/images/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="How FoodPeel Works — Scan. Rate. Know." />
+  <meta name="twitter:image" content="https://foodpeel.com/images/og-image.png" />
+  <link rel="canonical" href="https://foodpeel.com/how-it-works.html" />
+  <title>How It Works — FoodPeel</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "How FoodPeel Works",
+    "description": "Scan any grocery product barcode and get an instant AI-powered safety rating for every ingredient.",
+    "step": [
+      {"@type": "HowToStep", "name": "Scan the Barcode", "text": "Open FoodPeel and point your camera at any product barcode."},
+      {"@type": "HowToStep", "name": "AI Reads Every Ingredient", "text": "FoodPeel cross-references every ingredient against our research database of thousands of food additives."},
+      {"@type": "HowToStep", "name": "Instant Red/Yellow/Green Rating", "text": "Get an at-a-glance safety score for each ingredient and the product overall."},
+      {"@type": "HowToStep", "name": "See Why + What to Swap", "text": "Tap any ingredient to see exactly why it's flagged and find better alternatives."}
+    ]
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .hiw-hero {
+      padding: 140px 0 80px;
+      text-align: center;
+    }
+    .steps-section {
+      padding: 60px 0 100px;
+    }
+    .step-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+      margin-bottom: 100px;
+    }
+    .step-row.reverse {
+      direction: rtl;
+    }
+    .step-row.reverse > * {
+      direction: ltr;
+    }
+    @media (max-width: 768px) {
+      .step-row, .step-row.reverse {
+        grid-template-columns: 1fr;
+        direction: ltr;
+        gap: 40px;
+        margin-bottom: 60px;
+      }
+    }
+    .step-number {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--accent-green);
+      margin-bottom: 16px;
+      display: block;
+    }
+    .step-title {
+      font-size: clamp(28px, 4vw, 42px);
+      font-weight: 900;
+      color: var(--text-primary);
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      margin-bottom: 20px;
+    }
+    .step-desc {
+      font-size: 17px;
+      color: #9ca3af;
+      line-height: 1.75;
+      margin-bottom: 24px;
+    }
+    .step-details {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .step-details li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 15px;
+      color: #d1d5db;
+      line-height: 1.6;
+      margin-bottom: 12px;
+    }
+    .step-details li::before {
+      content: '✓';
+      color: var(--accent-green);
+      font-weight: 700;
+      font-size: 14px;
+      margin-top: 2px;
+      flex-shrink: 0;
+    }
+    .step-visual {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 48px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 320px;
+      position: relative;
+      overflow: hidden;
+    }
+    .step-visual::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--accent-green), var(--accent-green-light));
+    }
+    .step-icon {
+      font-size: 72px;
+      margin-bottom: 20px;
+    }
+    .step-visual-label {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text-primary);
+      text-align: center;
+    }
+    .step-visual-sub {
+      font-size: 14px;
+      color: var(--text-muted);
+      text-align: center;
+      margin-top: 8px;
+    }
+    .rating-demo {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+      max-width: 280px;
+    }
+    .rating-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px 16px;
+    }
+    .rating-ingredient {
+      font-size: 14px;
+      color: #d1d5db;
+      font-weight: 500;
+    }
+    .rating-badge {
+      font-size: 12px;
+      font-weight: 700;
+      border-radius: 100px;
+      padding: 3px 12px;
+    }
+    .badge-green { background: rgba(34,197,94,0.15); color: #22c55e; }
+    .badge-yellow { background: rgba(234,179,8,0.15); color: #eab308; }
+    .badge-red { background: rgba(239,68,68,0.15); color: #ef4444; }
+    .why-section {
+      padding: 80px 0 100px;
+      background: rgba(34,197,94,0.03);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 28px;
+      margin-top: 56px;
+    }
+    .why-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 32px 28px;
+    }
+    .why-emoji {
+      font-size: 36px;
+      margin-bottom: 16px;
+      display: block;
+    }
+    .why-title {
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 10px;
+    }
+    .why-text {
+      font-size: 15px;
+      color: #6b7280;
+      line-height: 1.65;
+    }
+    .origin-section {
+      padding: 100px 0;
+    }
+    .origin-inner {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+    .origin-inner h2 {
+      font-size: clamp(28px, 4vw, 44px);
+      font-weight: 900;
+      color: var(--text-primary);
+      letter-spacing: -0.03em;
+      margin-bottom: 28px;
+    }
+    .origin-inner p {
+      font-size: 18px;
+      color: #9ca3af;
+      line-height: 1.8;
+      margin-bottom: 22px;
+    }
+    .origin-inner strong {
+      color: var(--text-primary);
+    }
+    .origin-pullquote {
+      border-left: 4px solid var(--accent-green);
+      padding: 20px 28px;
+      margin: 40px 0;
+      background: rgba(34,197,94,0.05);
+      border-radius: 0 12px 12px 0;
+    }
+    .origin-pullquote p {
+      font-size: 20px;
+      font-style: italic;
+      color: #d1d5db;
+      margin: 0;
+      line-height: 1.6;
+    }
+    .tech-section {
+      padding: 0 0 100px;
+    }
+    .tech-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+      margin-top: 48px;
+    }
+    .tech-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px 24px;
+      text-align: center;
+    }
+    .tech-number {
+      font-size: 40px;
+      font-weight: 900;
+      color: var(--accent-green);
+      letter-spacing: -0.03em;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .tech-label {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 8px;
+    }
+    .tech-desc {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.55;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav>
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+          <span class="nav-logo-emoji">🥦</span>
+          <span class="nav-logo-text">Food<span>Peel</span></span>
+          <span class="nav-tagline">Peel back the label.</span>
+        </a>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="how-it-works.html" class="nav-link" style="color: var(--accent-green);">How It Works</a>
+          <a href="blog/" class="nav-link">Blog</a>
+          <a href="ingredient-lookup.html" class="nav-link">Ingredients</a>
+          <a href="pricing.html" class="nav-link">Pricing</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="early-access.html" class="nav-cta">Get Early Access →</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hiw-hero">
+    <div class="container">
+      <span class="section-label">How It Works</span>
+      <h1 class="section-title" style="font-size: clamp(36px, 6vw, 64px); max-width: 800px; margin: 0 auto 20px;">
+        Scan. Rate. Know.<br /><span style="color: var(--accent-green);">In Under 3 Seconds.</span>
+      </h1>
+      <div class="divider center"></div>
+      <p class="section-sub" style="text-align: center; margin: 0 auto; max-width: 580px;">
+        FoodPeel turns the back of any food package into a clear, honest answer: is this safe for me and my family? Here's exactly how.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== STEPS ===== -->
+  <section class="steps-section">
+    <div class="container">
+
+      <!-- Step 1 -->
+      <div class="step-row">
+        <div>
+          <span class="step-number">Step 01</span>
+          <h2 class="step-title">Scan Any Barcode</h2>
+          <p class="step-desc">
+            Open FoodPeel, point your camera at the barcode on any grocery product, and let the app do the rest. No typing. No searching. No guessing which product you mean.
+          </p>
+          <ul class="step-details">
+            <li>Works on any UPC/EAN barcode in the grocery store</li>
+            <li>Instant recognition — no waiting, no upload delay</li>
+            <li>Covers millions of products across all major US retailers</li>
+            <li>Product not found? Type the name and we'll find it</li>
+          </ul>
+        </div>
+        <div class="step-visual">
+          <div class="step-icon">📸</div>
+          <div class="step-visual-label">Point. Tap. Done.</div>
+          <div class="step-visual-sub">Camera → barcode → results in under 3 seconds</div>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="step-row reverse">
+        <div>
+          <span class="step-number">Step 02</span>
+          <h2 class="step-title">AI Reads Every Ingredient</h2>
+          <p class="step-desc">
+            The moment you scan, FoodPeel pulls the complete ingredient list and cross-references every single item against our research database. Not just the scary-sounding ones — all of them.
+          </p>
+          <ul class="step-details">
+            <li>Cross-references every ingredient against thousands of research entries</li>
+            <li>Identifies hidden names for common additives (56 names for sugar alone)</li>
+            <li>Flags EU-banned substances still legal in the US</li>
+            <li>Checks for allergens, inflammatory compounds, and controversial additives</li>
+            <li>Updates automatically as new research is published</li>
+          </ul>
+        </div>
+        <div class="step-visual">
+          <div class="step-icon">🧠</div>
+          <div class="step-visual-label">Every ingredient. Every time.</div>
+          <div class="step-visual-sub">Thousands of additives in our research database</div>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="step-row">
+        <div>
+          <span class="step-number">Step 03</span>
+          <h2 class="step-title">Instant Red / Yellow / Green Rating</h2>
+          <p class="step-desc">
+            No jargon. No science-speak. Each ingredient gets a clear color rating: green means safe, yellow means proceed with awareness, red means this ingredient has significant research concerns.
+          </p>
+          <p class="step-desc">
+            The product also gets an overall score based on the full ingredient picture.
+          </p>
+        </div>
+        <div class="step-visual">
+          <div class="rating-demo">
+            <div class="rating-row">
+              <span class="rating-ingredient">Whole grain oats</span>
+              <span class="rating-badge badge-green">✓ Safe</span>
+            </div>
+            <div class="rating-row">
+              <span class="rating-ingredient">Carrageenan</span>
+              <span class="rating-badge badge-yellow">⚠ Caution</span>
+            </div>
+            <div class="rating-row">
+              <span class="rating-ingredient">Red 40</span>
+              <span class="rating-badge badge-red">✗ Avoid</span>
+            </div>
+            <div class="rating-row">
+              <span class="rating-ingredient">Cane sugar</span>
+              <span class="rating-badge badge-yellow">⚠ Limit</span>
+            </div>
+            <div class="rating-row">
+              <span class="rating-ingredient">Riboflavin</span>
+              <span class="rating-badge badge-green">✓ Safe</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="step-row reverse">
+        <div>
+          <span class="step-number">Step 04</span>
+          <h2 class="step-title">See Exactly Why — and What to Swap</h2>
+          <p class="step-desc">
+            Tap any ingredient and get a plain-English explanation: what it is, what the research says, why it's flagged, and what products you could buy instead that don't contain it.
+          </p>
+          <ul class="step-details">
+            <li>No vague warnings — specific research citations for flagged ingredients</li>
+            <li>Alternative product suggestions for red-rated items</li>
+            <li>Context matters: "this is concerning at high doses" vs "this is banned in 28 countries"</li>
+            <li>Save products and build your own personal Clean List</li>
+          </ul>
+        </div>
+        <div class="step-visual">
+          <div class="step-icon">💡</div>
+          <div class="step-visual-label">Know why. Shop smarter.</div>
+          <div class="step-visual-sub">Plain English explanations + better swap suggestions</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== WHY WE BUILT THIS ===== -->
+  <section class="origin-section">
+    <div class="container">
+      <div class="origin-inner">
+        <span class="section-label" style="display: block; margin-bottom: 16px;">Why We Built This</span>
+        <h2>The Real Food Movement Needs Better Tools</h2>
+
+        <p>
+          It started in the cereal aisle. A parent, label in hand, trying to figure out if Yellow 5 was actually a problem or just internet hysteria. Pulling out a phone to search. Wading through conflicting articles, industry-funded studies, and alarmist blogs. Twenty minutes later, still not sure.
+        </p>
+
+        <p>
+          That's not a knowledge problem. That's a tooling problem.
+        </p>
+
+        <div class="origin-pullquote">
+          <p>"More than 70% of the US food supply is ultra-processed. The average American unknowingly consumes about 3 to 5 pounds of food additives per year. Most of them can't pronounce — let alone evaluate — the ingredients on the labels they're reading."</p>
+        </div>
+
+        <p>
+          The food industry spends billions on labels designed to <strong>look</strong> healthy. "Natural flavors." "Made with real fruit." "No high fructose corn syrup" (while using six other forms of sugar). Meanwhile, the actual ingredient list — the one that tells the real story — is printed in the smallest font legally allowed.
+        </p>
+
+        <p>
+          The real food movement is real. Millions of people want to eat better. They're reading labels. They're asking questions. They're pushing back. But they're doing it with tools designed 30 years ago: reading glasses and a lot of guesswork.
+        </p>
+
+        <p>
+          <strong>FoodPeel is the tool the real food movement deserves.</strong> Not a wellness influencer telling you to avoid 47 things. Not an industry-funded "safety guide." Just honest, current, research-backed information about exactly what's in the specific product you're holding right now — and a clear answer about what to do with that information.
+        </p>
+
+        <p>
+          We built this for the parent in the cereal aisle. The person with a food sensitivity who's tired of getting sick and not knowing why. The family trying to do better on a real budget. The curious person who just wants to know the truth.
+        </p>
+
+        <p>
+          It shouldn't take 20 minutes and a chemistry degree to know what's in your food. Now it won't.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHAT'S UNDER THE HOOD ===== -->
+  <section class="tech-section">
+    <div class="container">
+      <div style="text-align: center;">
+        <span class="section-label">By the Numbers</span>
+        <h2 class="section-title" style="font-size: clamp(28px, 4vw, 44px); margin-bottom: 0;">
+          Built on Real Research
+        </h2>
+      </div>
+      <div class="tech-grid">
+        <div class="tech-card">
+          <div class="tech-number">10,000+</div>
+          <div class="tech-label">Products in Database</div>
+          <div class="tech-desc">And growing daily as we expand our product catalog across all major US grocery stores.</div>
+        </div>
+        <div class="tech-card">
+          <div class="tech-number">3,500+</div>
+          <div class="tech-label">Ingredients Evaluated</div>
+          <div class="tech-desc">Every additive, preservative, dye, sweetener, and emulsifier has a rating backed by research.</div>
+        </div>
+        <div class="tech-card">
+          <div class="tech-number">&lt;3s</div>
+          <div class="tech-label">Average Scan Time</div>
+          <div class="tech-desc">From barcode to full ingredient breakdown — faster than you can read the label yourself.</div>
+        </div>
+        <div class="tech-card">
+          <div class="tech-number">Free</div>
+          <div class="tech-label">To Start</div>
+          <div class="tech-desc">Basic scanning is always free. Pro unlocks deep ingredient breakdowns, swap suggestions, and history.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY SECTION ===== -->
+  <section class="why-section">
+    <div class="container">
+      <div style="text-align: center; max-width: 600px; margin: 0 auto;">
+        <span class="section-label">Why FoodPeel</span>
+        <h2 class="section-title" style="font-size: clamp(28px, 4vw, 44px); margin-bottom: 16px;">
+          Different From Every Other<br />Food App
+        </h2>
+        <p style="font-size: 17px; color: #9ca3af; line-height: 1.7;">
+          There are calorie counters. There are diet trackers. There are nutrition apps. FoodPeel does one thing the others don't: tells you the truth about food safety, not just macros.
+        </p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card">
+          <span class="why-emoji">🚫</span>
+          <div class="why-title">No Sponsored Content</div>
+          <p class="why-text">We don't accept advertising from food manufacturers. Our ratings are based on research, not relationships.</p>
+        </div>
+        <div class="why-card">
+          <span class="why-emoji">📚</span>
+          <div class="why-title">Research-Backed Ratings</div>
+          <p class="why-text">Every rating is sourced from published research, not intuition or trending wellness content. We cite our sources.</p>
+        </div>
+        <div class="why-card">
+          <span class="why-emoji">🌍</span>
+          <div class="why-title">Global Safety Standards</div>
+          <p class="why-text">We flag EU-banned ingredients that are still legal in the US. You deserve to know what other countries already decided isn't safe.</p>
+        </div>
+        <div class="why-card">
+          <span class="why-emoji">📖</span>
+          <div class="why-title">Plain English Always</div>
+          <p class="why-text">No chemical names without explanation. No vague "may cause concerns." Just clear language about what something is and what the research shows.</p>
+        </div>
+        <div class="why-card">
+          <span class="why-emoji">🔄</span>
+          <div class="why-title">Constantly Updated</div>
+          <p class="why-text">Food research doesn't stand still. When new studies are published, our database gets updated. You always have the latest information.</p>
+        </div>
+        <div class="why-card">
+          <span class="why-emoji">💰</span>
+          <div class="why-title">Free to Start</div>
+          <p class="why-text">Basic scans are always free. We built this to help people, not to put food safety behind a paywall.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section style="padding: 100px 0;">
+    <div class="container">
+      <div style="background: var(--bg-card); border: 1px solid var(--border-accent); border-radius: 24px; padding: 72px 40px; text-align: center;">
+        <h2 style="font-size: clamp(28px, 5vw, 52px); font-weight: 900; color: var(--text-primary); letter-spacing: -0.03em; margin-bottom: 20px; line-height: 1.1;">
+          Ready to Know What's<br /><span style="color: var(--accent-green);">Really In Your Food?</span>
+        </h2>
+        <p style="font-size: 18px; color: #9ca3af; margin-bottom: 36px; line-height: 1.7; max-width: 480px; margin-left: auto; margin-right: auto;">
+          Join thousands of families already signed up for FoodPeel early access. Be first when we launch — and get 3 months of Pro free.
+        </p>
+        <a href="early-access.html" class="btn-primary" style="display: inline-block; text-decoration: none; padding: 18px 40px; font-size: 18px;">
+          Get Early Access →
+        </a>
+        <p style="margin-top: 20px; font-size: 14px; color: var(--text-muted);">Free to join. No spam. No credit card.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-copy">
+          © 2026 FoodPeel · Built with <span class="footer-heart">❤️</span> for families
+        </p>
+        <div class="footer-links">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="faq.html">FAQ</a>
+          <a href="ingredient-lookup.html">Ingredient Lookup</a>
+          <a href="mailto:hello@foodpeel.com">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
