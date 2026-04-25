@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Get early access to FoodPeel — the app that tells you exactly what's in your food. Sign up now and get Pro free for 3 months at launch." />
+  <meta property="og:title" content="Get Early Access to FoodPeel — Know What's Really In Your Food" />
+  <meta property="og:description" content="Sign up for early access and get Pro free for 3 months when we launch. No spam, ever." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://foodpeel.com/early-access.html" />
+  <meta property="og:image" content="https://foodpeel.com/images/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://foodpeel.com/images/og-image.png" />
+  <link rel="canonical" href="https://foodpeel.com/early-access.html" />
+  <title>Get Early Access — FoodPeel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .ea-page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 120px 24px 80px;
+      position: relative;
+      overflow: hidden;
+    }
+    .ea-page::before {
+      content: '';
+      position: absolute;
+      top: -200px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 900px;
+      height: 900px;
+      background: radial-gradient(circle, rgba(34,197,94,0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .ea-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-accent);
+      border-radius: 24px;
+      padding: 64px 56px;
+      max-width: 560px;
+      width: 100%;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+      box-shadow: 0 0 60px rgba(34,197,94,0.12);
+    }
+    @media (max-width: 600px) {
+      .ea-card { padding: 40px 28px; }
+    }
+    .ea-emoji {
+      font-size: 56px;
+      line-height: 1;
+      display: block;
+      margin-bottom: 24px;
+    }
+    .ea-headline {
+      font-size: clamp(28px, 4vw, 40px);
+      font-weight: 900;
+      color: var(--text-primary);
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      margin-bottom: 16px;
+    }
+    .ea-sub {
+      font-size: 17px;
+      color: #9ca3af;
+      line-height: 1.7;
+      margin-bottom: 36px;
+    }
+    .ea-perks {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 36px;
+      text-align: left;
+    }
+    .ea-perk {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 15px;
+      color: #d1d5db;
+      line-height: 1.5;
+    }
+    .ea-perk-icon {
+      font-size: 18px;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .ea-form {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .ea-form input[type="email"],
+    .ea-form input[type="text"] {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 10px;
+      padding: 14px 18px;
+      font-size: 16px;
+      color: var(--text-primary);
+      font-family: inherit;
+      outline: none;
+      transition: border-color 0.2s;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .ea-form input:focus {
+      border-color: var(--accent-green);
+    }
+    .ea-form input::placeholder { color: #6b7280; }
+    .ea-submit {
+      background: var(--accent-green);
+      color: #000;
+      border: none;
+      border-radius: 10px;
+      padding: 16px 28px;
+      font-size: 17px;
+      font-weight: 800;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.15s;
+      font-family: inherit;
+      width: 100%;
+    }
+    .ea-submit:hover {
+      background: var(--accent-green-light);
+      transform: translateY(-2px);
+    }
+    .ea-note {
+      font-size: 13px;
+      color: #6b7280;
+      margin-top: 14px;
+      line-height: 1.6;
+    }
+    /* Thank you state */
+    .ea-thankyou {
+      display: none;
+      text-align: center;
+    }
+    .ea-thankyou-emoji {
+      font-size: 72px;
+      display: block;
+      margin-bottom: 24px;
+      animation: popIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    @keyframes popIn {
+      from { transform: scale(0.5); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+    .ea-thankyou h2 {
+      font-size: 32px;
+      font-weight: 900;
+      color: var(--text-primary);
+      margin-bottom: 12px;
+      letter-spacing: -0.02em;
+    }
+    .ea-thankyou p {
+      font-size: 17px;
+      color: #9ca3af;
+      line-height: 1.7;
+      margin-bottom: 28px;
+    }
+    .ea-thankyou-badge {
+      display: inline-block;
+      background: rgba(34,197,94,0.12);
+      border: 1px solid rgba(34,197,94,0.3);
+      border-radius: 100px;
+      padding: 8px 20px;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--accent-green);
+    }
+    .social-proof-bar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 32px;
+      font-size: 14px;
+      color: #6b7280;
+    }
+    .proof-dots {
+      display: flex;
+    }
+    .proof-dot {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--bg-secondary);
+      border: 2px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      margin-left: -8px;
+    }
+    .proof-dot:first-child { margin-left: 0; }
+    .proof-highlight { color: var(--accent-green); font-weight: 700; }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav>
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+          <span class="nav-logo-emoji">🥦</span>
+          <span class="nav-logo-text">Food<span>Peel</span></span>
+          <span class="nav-tagline">Peel back the label.</span>
+        </a>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="blog/" class="nav-link">Blog</a>
+          <a href="ingredient-lookup.html" class="nav-link">Ingredients</a>
+          <a href="pricing.html" class="nav-link">Pricing</a>
+          <a href="faq.html" class="nav-link">FAQ</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="early-access.html" class="nav-cta" style="color: #000;">Get Early Access →</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="ea-page">
+    <div class="ea-card">
+
+      <!-- FORM STATE -->
+      <div id="ea-form-state">
+        <span class="ea-emoji">🥦</span>
+        <h1 class="ea-headline">Get Early Access<br /><span style="color: var(--accent-green);">to FoodPeel</span></h1>
+        <p class="ea-sub">
+          Be first in line when we launch. Early access members get Pro free for 3 months —
+          that's a $25 value, yours at no cost.
+        </p>
+
+        <div class="ea-perks">
+          <div class="ea-perk">
+            <span class="ea-perk-icon">✅</span>
+            <span><strong>Pro free for 3 months</strong> — scan unlimited products, see full ingredient breakdowns, get cleaner alternatives</span>
+          </div>
+          <div class="ea-perk">
+            <span class="ea-perk-icon">🔔</span>
+            <span><strong>First to know</strong> when we launch on iOS and Android</span>
+          </div>
+          <div class="ea-perk">
+            <span class="ea-perk-icon">🗣️</span>
+            <span><strong>Influence the roadmap</strong> — early members help shape which features we build first</span>
+          </div>
+          <div class="ea-perk">
+            <span class="ea-perk-icon">🚫</span>
+            <span><strong>No spam, ever.</strong> We'll only email you when it matters.</span>
+          </div>
+        </div>
+
+        <form
+          id="ea-signup-form"
+          class="ea-form"
+          action="https://formspree.io/f/mwvwjjoq"
+          method="POST"
+        >
+          <input type="hidden" name="_subject" value="FoodPeel Early Access Signup" />
+          <input type="hidden" name="source" value="foodpeel-early-access-page" />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your email address"
+            required
+            autocomplete="email"
+          />
+          <input
+            type="text"
+            name="first_name"
+            placeholder="First name (optional)"
+            autocomplete="given-name"
+          />
+          <button type="submit" class="ea-submit">Count Me In — Get Early Access →</button>
+        </form>
+        <p class="ea-note">Free plan always available. No credit card, no commitment. Just your email.</p>
+
+        <div class="social-proof-bar">
+          <div class="proof-dots">
+            <div class="proof-dot">👩</div>
+            <div class="proof-dot">👨</div>
+            <div class="proof-dot">👩‍🦱</div>
+            <div class="proof-dot">🧑</div>
+          </div>
+          <span>Join <span class="proof-highlight">247+ people</span> already on the list</span>
+        </div>
+      </div>
+
+      <!-- THANK YOU STATE (shown after submit) -->
+      <div id="ea-thankyou-state" class="ea-thankyou">
+        <span class="ea-thankyou-emoji">🎉</span>
+        <h2>You're on the list!</h2>
+        <p>
+          We'll email you the moment FoodPeel goes live — and your 3 months of Pro will be waiting.
+          In the meantime, check out the blog to learn what's hiding in your food.
+        </p>
+        <span class="ea-thankyou-badge">✓ Early Access Confirmed</span>
+        <div style="margin-top: 32px;">
+          <a href="blog/" class="btn-primary" style="display: inline-block; text-decoration: none; padding: 14px 28px; font-size: 16px;">
+            Read the Blog →
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-copy">
+          © 2026 FoodPeel · Built with <span class="footer-heart">❤️</span> for families
+        </p>
+        <div class="footer-links">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="faq.html">FAQ</a>
+          <a href="mailto:hello@foodpeel.com">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const form = document.getElementById('ea-signup-form');
+    const formState = document.getElementById('ea-form-state');
+    const thankyouState = document.getElementById('ea-thankyou-state');
+
+    form.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const btn = form.querySelector('.ea-submit');
+      btn.textContent = 'Signing you up...';
+      btn.disabled = true;
+
+      try {
+        const data = new FormData(form);
+        const response = await fetch(form.action, {
+          method: 'POST',
+          body: data,
+          headers: { 'Accept': 'application/json' }
+        });
+
+        if (response.ok) {
+          formState.style.display = 'none';
+          thankyouState.style.display = 'block';
+        } else {
+          btn.textContent = 'Count Me In — Get Early Access →';
+          btn.disabled = false;
+          alert('Something went wrong. Please try again or email hello@foodpeel.com.');
+        }
+      } catch (err) {
+        btn.textContent = 'Count Me In — Get Early Access →';
+        btn.disabled = false;
+        alert('Network error. Please try again.');
+      }
+    });
+  </script>
+
+</body>
+</html>
