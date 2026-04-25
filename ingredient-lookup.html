@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="FoodPeel Ingredient Lookup — Search any food additive or ingredient and instantly learn if it's safe, what it's banned from, and what to do about it. No chemistry degree required." />
   <meta property="og:title" content="FoodPeel Ingredient Lookup — Is That Ingredient Safe?" />
-  <meta property="og:description" content="Search 75+ common food additives and get instant safety ratings, banned country info, and plain-English descriptions." />
+  <meta property="og:description" content="Search 200+ common food additives and get instant safety ratings, banned country info, and plain-English descriptions." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://foodpeel.com/ingredient-lookup.html" />
   <meta property="og:image" content="https://foodpeel.com/images/og-image.png" />
@@ -311,7 +311,7 @@
           spellcheck="false"
         />
       </div>
-      <p class="lookup-hint"><span style="background: rgba(34,197,94,0.12); border: 1px solid rgba(34,197,94,0.25); border-radius: 100px; padding: 3px 12px; font-size: 13px; font-weight: 700; color: var(--accent-green);">Database: 75 ingredients and growing</span></p>
+      <p class="lookup-hint"><span style="background: rgba(34,197,94,0.12); border: 1px solid rgba(34,197,94,0.25); border-radius: 100px; padding: 3px 12px; font-size: 13px; font-weight: 700; color: var(--accent-green);">Database: 200+ ingredients and growing</span></p>
     </div>
   </section>
 
@@ -932,6 +932,1088 @@
       banned_in: [],
       description: "The FDA defines 'natural flavors' as substances derived from plant or animal sources — but the definition allows up to 100+ chemical compounds in a single 'natural flavor,' including solvents, emulsifiers, and preservatives, none of which need to be disclosed. Examples of what can hide here: castoreum (beaver anal gland secretion used in raspberry and vanilla flavoring), civet (cat secretion), insect-derived compounds, and complex chemical mixtures. The term also allows companies to conceal proprietary formulations. It's the second most common ingredient on food labels after salt, and it means you genuinely cannot know what you're eating from the label alone. People with specific food allergies or religious dietary restrictions face real hidden risks.",
       what_to_do: "Treat as a transparency red flag. Not automatically dangerous, but you're choosing to eat an undisclosed mixture. People with allergies, kosher/halal restrictions, or veganism should be aware that natural flavors may contain animal-derived compounds. Prefer products that specify their flavor sources."
+    },
+
+    // === NEW ENTRIES: DYES ===
+    "blue 1": {
+      name: "Blue 1 (Brilliant Blue FCF)",
+      aliases: ["brilliant blue", "fd&c blue no. 1", "fd&c blue 1", "e133"],
+      rating: "red",
+      banned_in: ["EU (several member states banned)", "Norway", "Finland"],
+      description: "Blue 1 is a synthetic petroleum-derived dye used in sports drinks, candy, ice cream, cereals, and canned peas. Like Red 40 and Yellow 5, it's part of the group of dyes that triggered the landmark 2007 Lancet study linking dyes to hyperactivity in children. Animal studies have shown potential brain damage in high doses. Several EU member states have restricted it and the EU requires a warning label on products containing it. It's also been linked to chromosome damage in some studies.",
+      what_to_do: "Minimize in children's diets especially. Check sports drinks (Gatorade, Powerade), blue-colored candy, cereal, and ice cream. Look for products colored with spirulina extract or butterfly pea flower for natural blue alternatives."
+    },
+    "blue 2": {
+      name: "Blue 2 (Indigo Carmine)",
+      aliases: ["indigo carmine", "fd&c blue no. 2", "fd&c blue 2", "e132"],
+      rating: "red",
+      banned_in: ["Norway", "EU restricts"],
+      description: "Blue 2 is an indigoid synthetic dye used in candy, beverages, baked goods, and pet food. Animal studies showed increased incidence of brain tumors in male rats at high doses — the FDA reviewed this in the 1980s and concluded the dose was not relevant to human exposure, a conclusion many researchers consider inadequately cautious. It's linked to hyperactivity like other synthetic dyes and is one of the less-studied FD&C dyes.",
+      what_to_do: "Avoid where possible. Check candy, packaged baked goods, and beverages with blue or purple coloring. Less common than Blue 1 or Red 40, but worth checking in candy and gummies marketed to children."
+    },
+    "green 3": {
+      name: "Green 3 (Fast Green FCF)",
+      aliases: ["fast green", "fd&c green no. 3", "fd&c green 3", "e143"],
+      rating: "red",
+      banned_in: ["EU", "Australia", "UK"],
+      description: "Green 3 is the least used of the FD&C dyes but one of the most concerning. It's been linked to bladder and testes tumors in animal studies and is banned throughout the EU, Australia, and the UK. In the US, it's approved for use in certain beverages, candy, and cereals. Its rarity in US foods makes it easy to overlook on labels — which is why checking ingredient lists matters.",
+      what_to_do: "Avoid. Banned in most developed countries. Check ice cream, mint jelly, canned vegetables, and niche candy products. If you see 'Fast Green' or 'FD&C Green No. 3,' that's a red flag."
+    },
+    "red 2": {
+      name: "Red 2 (Amaranth Dye)",
+      aliases: ["amaranth dye", "e123", "fd&c red 2"],
+      rating: "red",
+      banned_in: ["US (banned 1976)", "Canada", "EU (restricted)"],
+      description: "Red 2 (not to be confused with the grain amaranth) was banned by the FDA in 1976 after animal studies suggested it caused cancer in rats. The US ban was actually a regulatory rarity — the FDA moved decisively. Canada and several other countries followed. The EU still permits it in very limited uses (roe from fish). If you're buying food made in Canada or Europe, it's worth checking for E123 in niche products.",
+      what_to_do: "Already banned in the US — no action needed for domestic products. If you buy imported foods, particularly specialty European products, check for E123."
+    },
+    "citrus red 2": {
+      name: "Citrus Red 2",
+      aliases: ["citrus red no. 2"],
+      rating: "red",
+      banned_in: ["EU", "Canada", "UK", "Australia"],
+      description: "Citrus Red 2 is a petroleum-derived dye approved by the FDA for one specific purpose: dyeing the skin of oranges to make them more uniformly orange. The dye doesn't penetrate the flesh — it stays on the peel — so it's 'safe' only if you don't eat orange peel. However, if you zest oranges, use citrus peel in cooking, or make orange tea, you're consuming this dye. The IARC classifies it as possibly carcinogenic (Group 2B). It's banned in the EU, Canada, UK, and Australia. Florida and California oranges are more likely to be dyed than organics.",
+      what_to_do: "Buy organic oranges if you zest or use citrus peel. Look for 'color added' disclosure on conventional orange bags — this indicates Citrus Red 2 was used. Never use the peel of non-organic, conventionally grown oranges in cooking without washing thoroughly."
+    },
+    "orange b": {
+      name: "Orange B",
+      aliases: ["fd&c orange b"],
+      rating: "yellow",
+      banned_in: ["EU", "Canada"],
+      description: "Orange B is an FDA-approved dye restricted to a single use: coloring the casings or surfaces of hot dogs and sausages. Despite being technically legal, it's rarely used anymore due to its limited approval scope. The FDA studied it extensively in the 1970s and while approving it, has allowed essentially no new uses. It's not extensively studied for long-term health effects compared to the major FD&C dyes. Banned in the EU and Canada.",
+      what_to_do: "Check hot dog and sausage ingredient lists. Its use is declining. If you see it listed, it's a signal the product is using synthetic coloring even in its casings."
+    },
+    "red 40 mcc": {
+      name: "Red 40 (Quick Reference)",
+      aliases: ["allura red ac", "ci 16035", "food red 17"],
+      rating: "red",
+      banned_in: ["EU requires warning label", "Norway", "Finland"],
+      description: "Quick reference entry for Red 40 under its technical names. See full 'Red 40' entry for complete information. Red 40 appears under many names in ingredient lists — Allura Red, CI 16035, Food Red 17 — all are the same petroleum-derived synthetic dye.",
+      what_to_do: "See main Red 40 entry. Avoid in children's food. Check cereals, candy, chips, and beverages."
+    },
+
+    // === SWEETENERS ===
+    "saccharin": {
+      name: "Saccharin",
+      aliases: ["sweet n low", "sweet'n low", "e954", "sodium saccharin"],
+      rating: "yellow",
+      banned_in: ["Canada (food use banned for decades, recently relaxed)"],
+      description: "Saccharin is the oldest artificial sweetener — discovered in 1879. It's 300-500x sweeter than sugar. In 1981, the FDA mandated cancer warning labels after studies showed bladder cancer in male rats. That warning was removed in 2000 after reviews concluded the mechanism wasn't relevant to humans. Canada banned it from food from 1977 to 2014. More recent research suggests saccharin may negatively alter gut microbiome composition and impair glucose tolerance. It's less used now than aspartame or sucralose but still found in tabletop sweeteners, diet sodas, and some medications.",
+      what_to_do: "Reduce use. The gut microbiome findings from newer research are concerning. Saccharin is one of the older, more-studied sweeteners — the cancer concern in humans is considered low, but the glucose metabolism and microbiome effects are worth taking seriously."
+    },
+    "cyclamate": {
+      name: "Cyclamate",
+      aliases: ["sodium cyclamate", "calcium cyclamate", "e952"],
+      rating: "red",
+      banned_in: ["US (banned 1969)", "formally petitioned for reinstatement"],
+      description: "Cyclamate was banned by the FDA in 1969 after a study suggested it caused bladder cancer in rats when combined with saccharin. The compound is 30-50x sweeter than sugar and was widely used in diet drinks. Despite multiple petitions to the FDA for reinstatement (most recently in 1982 and 2000, both denied or pending for decades), it remains banned in the US. It's still approved in over 130 countries including the EU, Canada, and UK. The science is genuinely contested — newer studies suggest the rat data wasn't applicable to humans — but the FDA has not reversed its position.",
+      what_to_do: "Already banned in US food — no action needed for domestic products. Avoid in imported products and supplements where it appears as E952 or 'sodium cyclamate.' Found in some Canadian and European sugar-free products."
+    },
+    "stevia": {
+      name: "Stevia / Steviol Glycosides",
+      aliases: ["steviol glycosides", "rebaudioside a", "reb a", "rebaudioside m", "reb m", "e960", "truvia", "pure via"],
+      rating: "green",
+      banned_in: [],
+      description: "Stevia is a natural sweetener derived from the leaves of the Stevia rebaudiana plant, native to South America. The steviol glycosides (particularly rebaudioside A) are 200-400x sweeter than sugar. Unlike most artificial sweeteners, stevia comes from a real plant and has been used for centuries. Research is generally favorable — it doesn't appear to spike blood sugar, shows no carcinogenicity, and some studies suggest mild anti-inflammatory benefits. The main drawbacks: it has a bitter or licorice-like aftertaste that many people find unpleasant, and highly purified stevia extract is heavily processed despite being 'natural.' Whole leaf stevia products are less processed and preferred by purists.",
+      what_to_do: "One of the safer sweetener options. If you're reducing sugar, stevia is a reasonable choice. Whole leaf stevia powder is preferred over highly processed extracts. Some people are sensitive to the bitter aftertaste — experiment to find what works for you."
+    },
+    "monk fruit": {
+      name: "Monk Fruit Extract (Luo Han Guo)",
+      aliases: ["luo han guo", "monk fruit sweetener", "mogrosides", "e961 alternative"],
+      rating: "green",
+      banned_in: [],
+      description: "Monk fruit extract comes from a small melon native to southern China and has been used in traditional medicine for centuries. The active compounds (mogrosides) are 150-200x sweeter than sugar. Unlike stevia, monk fruit typically doesn't have a bitter aftertaste. Studies suggest it doesn't affect blood sugar, has antioxidant properties, and shows no toxicity. The FDA considers it GRAS. It's more expensive than other sweeteners, which is why it's less common in mass-market products. It's often combined with erythritol in commercial products.",
+      what_to_do: "One of the cleanest sweetener options available. If the price is right for your budget, a solid choice for sugar reduction. Check that products using it don't contain hidden sugar alcohols or other sweeteners that may cause digestive issues."
+    },
+    "erythritol": {
+      name: "Erythritol",
+      aliases: ["e968", "sugar alcohol erythritol"],
+      rating: "yellow",
+      banned_in: [],
+      description: "Erythritol is a sugar alcohol naturally present in small amounts in some fruits, but commercially produced by fermenting glucose. It's 60-80% as sweet as sugar, has very few calories, and doesn't spike blood sugar. Unlike other sugar alcohols (sorbitol, xylitol), it's mostly absorbed in the small intestine and excreted unchanged — causing less digestive distress. However, a 2023 study in Nature Medicine found an association between high erythritol blood levels and increased risk of cardiovascular events (heart attack, stroke). The study raised significant concern, though causality is not proven and the population studied included people who already had cardiovascular risk factors.",
+      what_to_do: "Moderate use is likely fine for most people. Avoid consuming in very large amounts as found in some keto snacks and drinks (50g+ daily). The 2023 cardiovascular study warrants attention. People with existing heart disease or risk factors should discuss erythritol consumption with their doctor."
+    },
+    "xylitol": {
+      name: "Xylitol",
+      aliases: ["e967", "birch sugar"],
+      rating: "yellow",
+      banned_in: [],
+      description: "Xylitol is a sugar alcohol naturally found in birch trees and some fruits, with the same sweetness as sugar but about 40% fewer calories. It has well-established dental benefits — it inhibits the bacteria that cause tooth decay — which is why it's used in sugar-free gum and dental products. At doses above ~30-40g/day, xylitol causes significant digestive issues (osmotic diarrhea, bloating) in most people. CRITICAL WARNING: Xylitol is highly toxic to dogs — even small amounts can cause life-threatening hypoglycemia and liver failure. Keep all xylitol-containing products (gum, candy, peanut butter, baked goods) away from pets.",
+      what_to_do: "Safe in moderate food amounts for humans. Excellent in dental gum (actually beneficial). KEEP AWAY FROM DOGS — this is a genuine emergency risk. Read labels on any 'natural' peanut butter or 'sugar-free' product if you have pets."
+    },
+    "sorbitol": {
+      name: "Sorbitol",
+      aliases: ["e420", "d-sorbitol", "glucitol"],
+      rating: "yellow",
+      banned_in: [],
+      description: "Sorbitol is a sugar alcohol naturally found in apples, pears, and stone fruits, and commercially produced from glucose. It's about 60% as sweet as sugar. It's used in sugar-free candies, gum, baked goods, and some medications. Sorbitol is poorly absorbed in the small intestine and is fermented by gut bacteria — making it a significant laxative at doses above 20-50g/day. It's commonly listed as a cause of 'unexplained' IBS symptoms. Pears and apple juice naturally contain enough sorbitol to cause diarrhea in some children. 'Sugar-free' products often contain enough to cause real digestive distress.",
+      what_to_do: "Check sugar-free candies and gum — they often contain large amounts. If you or your children experience unexplained diarrhea after eating certain fruits or sugar-free products, sorbitol may be the cause. Limit total intake to under 20g/day to avoid laxative effects."
+    },
+    "mannitol": {
+      name: "Mannitol",
+      aliases: ["e421", "manna sugar"],
+      rating: "yellow",
+      banned_in: [],
+      description: "Mannitol is a sugar alcohol naturally found in mushrooms, celery, and some seaweeds, and used as a bulk sweetener in sugar-free products, medications, and chewing gum. Like sorbitol, it's poorly absorbed and can cause diarrhea at high doses (above ~20g). It has an interesting property in processed food: it's less hygroscopic than other sweeteners (doesn't absorb moisture from air), making it useful in powdered products. Generally considered safe at typical food use levels, though the digestive effects at high doses are well-documented.",
+      what_to_do: "Low priority concern at typical food levels. High doses cause digestive upset. It's less common in food than sorbitol or xylitol but found in some chewing gums, sugar-free candies, and breath mints."
+    },
+    "maltitol": {
+      name: "Maltitol",
+      aliases: ["e965", "maltitol syrup"],
+      rating: "yellow",
+      banned_in: [],
+      description: "Maltitol is a sugar alcohol widely used in 'sugar-free' and 'diabetic-friendly' chocolate, candy, and baked goods. It's about 75-90% as sweet as sugar. Here's the key problem: maltitol has a glycemic index of 36 — lower than sugar's 65, but significantly higher than other sugar alcohols. This means it still raises blood sugar more than marketed, which defeats the purpose for diabetics or ketogenic dieters. It also causes significant digestive distress (bloating, gas, diarrhea) at moderate doses. Many 'keto' and 'sugar-free' products use maltitol, misleading consumers about their blood sugar impact.",
+      what_to_do: "Be skeptical of 'sugar-free' or 'diabetic-friendly' labels on products containing maltitol — it still affects blood sugar. Check the glycemic impact if you're managing diabetes or following keto. Maltitol is the main reason 'sugar-free' candy causes digestive issues for many people."
+    },
+    "neotame": {
+      name: "Neotame",
+      aliases: ["e961", "newtame"],
+      rating: "yellow",
+      banned_in: [],
+      description: "Neotame is a derivative of aspartame that's 7,000-13,000x sweeter than sugar — making it one of the most potent sweeteners approved by the FDA. Despite being structurally related to aspartame, neotame does not produce phenylalanine in the body (aspartame does), so it doesn't require a PKU warning. It's used in low doses in baked goods, beverages, and some table sweeteners. Studies in farm animals raised concerns about intestinal damage, though the doses were extremely high. It's relatively new and less studied than other sweeteners. The EU has approved it; use is still expanding.",
+      what_to_do: "Moderate caution warranted given limited long-term human data. It's approved and used in tiny quantities, so typical exposure is low. If you want to avoid it specifically, check ingredient lists of diet beverages and commercial baked goods."
+    },
+    "allulose": {
+      name: "Allulose (D-Allulose)",
+      aliases: ["d-allulose", "psicose", "d-psicose"],
+      rating: "green",
+      banned_in: ["EU (not yet approved)", "Canada (not yet approved)"],
+      description: "Allulose is a naturally occurring rare sugar found in small amounts in figs, raisins, and maple syrup. It tastes and behaves like regular sugar (70% as sweet) but isn't metabolized — 90% passes through the body unchanged, contributing virtually no calories or blood sugar impact. It even helps lower blood glucose response to other foods eaten alongside it. The FDA doesn't count it toward 'added sugars' on nutrition labels. It browses and caramelizes like real sugar, making it popular in low-carb baking. Not yet approved in the EU or Canada due to regulatory lag. No significant safety concerns in current research.",
+      what_to_do: "One of the most promising low-glycemic sweeteners available. Currently mostly in specialty health products. If you're managing blood sugar or following ketogenic diets, allulose is a solid choice with a good safety profile."
+    },
+
+    // === PRESERVATIVES ===
+    "propyl gallate": {
+      name: "Propyl Gallate",
+      aliases: ["e310", "propyl 3,4,5-trihydroxybenzoate"],
+      rating: "yellow",
+      banned_in: ["EU (restricted)"],
+      description: "Propyl gallate is a synthetic antioxidant preservative used to prevent fats and oils from going rancid. It's found in mayonnaise, chips, vegetable oils, margarine, and convenience foods — often alongside BHA and BHT in the same product. Animal studies linked it to thyroid and kidney tumors. The EU restricts its use significantly. A US National Toxicology Program study found male rats had higher rates of rare kidney tumors. The combination of propyl gallate with BHA and/or BHT in the same product compounds the concern over each individual additive.",
+      what_to_do: "Avoid products that combine propyl gallate with BHA and BHT — the combination appears more concerning than any single compound alone. Check chips, crackers, frozen meals, and vegetable shortening."
+    },
+    "sodium erythorbate": {
+      name: "Sodium Erythorbate",
+      aliases: ["erythorbic acid", "e316", "e315"],
+      rating: "yellow",
+      banned_in: [],
+      description: "Sodium erythorbate is a synthetic antioxidant and food preservative derived from sugar, structurally similar to vitamin C (ascorbic acid) but without its nutritional benefits. It's used in cured meats, hot dogs, lunch meats, and sausages to maintain color and speed up the curing process. In processed meats, it reduces the formation of nitrosamines from sodium nitrite — which is the main reason it's added. It's generally considered safe, and its purpose of reducing nitrosamine formation is actually a health benefit in the context of cured meats. Not a major concern on its own.",
+      what_to_do: "In the context of cured meats, sodium erythorbate is actually performing a beneficial function by reducing nitrosamine formation. Low concern as an individual additive. Its presence doesn't make a processed meat significantly better or worse — the nitrate/nitrite question is more important."
+    },
+    "dimethyl dicarbonate": {
+      name: "Dimethyl Dicarbonate (DMDC)",
+      aliases: ["velcorin", "e242"],
+      rating: "yellow",
+      banned_in: ["EU (restricted)"],
+      description: "DMDC is a beverage preservative added to fruit juices, teas, sports drinks, and wine to kill yeast, bacteria, and mold without preserving chemicals remaining in the final product (it breaks down to methanol and CO2). The residual methanol formed is at levels below 0.5 mg/L — far below toxicological concern. The EU restricts its use and requires that the amounts added are controlled. The process is done commercially before bottling and no active DMDC remains in consumer products. It's a fairly clean preservation method compared to alternatives like sodium benzoate, but its presence is rarely disclosed to consumers.",
+      what_to_do: "Lower concern than many preservatives because it degrades before consumption. The methanol residue is negligible at approved use levels. More concerning are any other preservatives in the same product (sodium benzoate, sulfites)."
+    },
+    "natamycin": {
+      name: "Natamycin (Pimaricin)",
+      aliases: ["pimaricin", "e235", "natamycin"],
+      rating: "yellow",
+      banned_in: ["EU (restricted in food)"],
+      description: "Natamycin is an antifungal antibiotic produced naturally by the soil bacterium Streptomyces natalensis, used to prevent mold growth on the surface of cheese, yogurt, sausage casings, and some baked goods. Unlike chemical preservatives, it's a natural fermentation product. The concern: it's an antibiotic, and exposure through food may contribute to antibiotic resistance (though evidence for this specifically with natamycin is limited). The EU restricts it to surface application only on cheese and cured meats. It's generally considered safer than synthetic antifungals, but the antibiotic resistance concern keeps it at yellow.",
+      what_to_do: "Check cheese packaging — it's often listed on surface-treated cheeses. Not a high individual concern, but worth noting as another antibiotic-class compound used in food. Look for cheeses labeled 'no antimicrobial agents used.'"
+    },
+    "sodium diacetate": {
+      name: "Sodium Diacetate",
+      aliases: ["e262", "acetic acid sodium salt"],
+      rating: "yellow",
+      banned_in: [],
+      description: "Sodium diacetate is a preservative and flavor enhancer derived from acetic acid (vinegar). It gives a vinegar-like taste and inhibits mold and bacteria growth in bread, chips, seasoning blends, and meat products. It's considered safe at typical food use levels. Sodium diacetate is one of the additives in 'salt and vinegar' flavoring. At food use levels, it doesn't raise significant health concerns beyond its contribution to total sodium load. Its presence signals a processed product but is not individually alarming.",
+      what_to_do: "Low concern. Contributes to sodium intake. Found in chips, bread, and seasoned snacks. Not a reason to avoid a product on its own."
+    },
+
+    // === FLAVOR ENHANCERS ===
+    "disodium guanylate": {
+      name: "Disodium Guanylate",
+      aliases: ["e627", "sodium guanylate", "gmp"],
+      rating: "yellow",
+      banned_in: [],
+      description: "Disodium guanylate is a flavor enhancer derived from fish or dried seaweed, used to amplify savory and umami tastes. It's rarely used alone — almost always combined with MSG or disodium inosinate (as E635) to create a synergistic flavor effect. This combination allows manufacturers to use less MSG while achieving the same or stronger flavor. People sensitive to MSG often also react to guanylate. It's not suitable for people with gout (high purine content), and should be avoided by infants and young children. People with asthma, aspirin sensitivity, or kidney disease should exercise caution.",
+      what_to_do: "Check savory snacks, instant noodles, chips, and seasoning packets for E627 or 'disodium guanylate.' People with gout should avoid it — purines are metabolized to uric acid. If you react to MSG, suspect guanylate in products that don't contain MSG but have similar flavoring effects."
+    },
+    "disodium inosinate": {
+      name: "Disodium Inosinate",
+      aliases: ["e631", "sodium inosinate", "imp"],
+      rating: "yellow",
+      banned_in: [],
+      description: "Disodium inosinate is a flavor enhancer derived from meat or fish, used to amplify savory flavors alongside MSG and disodium guanylate. It's a purine compound — people with gout must avoid it. It's the reason many 'No MSG' products still taste very savory: the manufacturer replaced MSG with the E631/E627 combination that achieves the same effect without technically using MSG. This is a common ingredient loophole. The compound is also not vegan/vegetarian as it's animal-derived.",
+      what_to_do: "Check 'No MSG' snacks carefully — E631 is often the MSG substitute. Not suitable for gout patients, vegans/vegetarians, or infants. Found in chips, crackers, instant noodles, and fast food seasoning blends."
+    },
+    "hydrolyzed vegetable protein": {
+      name: "Hydrolyzed Vegetable Protein (HVP)",
+      aliases: ["hvp", "hydrolyzed plant protein", "hydrolyzed soy protein", "hydrolyzed corn protein"],
+      rating: "yellow",
+      banned_in: [],
+      description: "HVP is produced by boiling corn, soy, wheat, or other vegetables in hydrochloric acid, then neutralizing with sodium hydroxide to break proteins into amino acids including glutamic acid — creating a flavor enhancer with effects similar to MSG. The hydrolysis process also creates small amounts of 3-MCPD (3-monochloropropane-1,2-diol), a known animal carcinogen and probable human carcinogen. The FDA and EU have set limits on 3-MCPD in HVP. Beyond the 3-MCPD concern, HVP can be a hidden source of MSG (the free glutamate it contains functions identically to added MSG) and of gluten (when wheat-derived), making it a hidden trigger for sensitive individuals.",
+      what_to_do: "Check savory sauces, soups, bouillon, canned meats, and flavored snacks. If you're sensitive to MSG, HVP can trigger the same reactions. Wheat-derived HVP is a hidden gluten source. Look for products using actual meat/vegetable stocks for flavor instead."
+    },
+    "autolyzed yeast": {
+      name: "Autolyzed Yeast / Yeast Extract",
+      aliases: ["yeast extract", "autolyzed yeast extract", "aye", "torula yeast"],
+      rating: "yellow",
+      banned_in: [],
+      description: "Autolyzed yeast and yeast extract are made by breaking down yeast cells to release their contents, including free glutamate — which functions as a natural MSG. This is another common way to add MSG-like flavor enhancement without listing 'MSG' on the label. Unlike synthetic MSG, it comes with other compounds from the yeast (B vitamins, proteins) and is considered 'natural.' The key issue: people with MSG sensitivity may react to yeast extract just as they do to MSG. It's also higher in purines than most plant foods, making it a concern for gout patients.",
+      what_to_do: "Watch for it in soups, bouillon, snack foods, and 'natural flavors' on ingredient lists. If you're avoiding MSG for sensitivity reasons, yeast extract achieves the same flavor effect. Marmite and Vegemite are concentrated yeast extracts — consume moderately if gout-prone."
+    },
+
+    // === ACIDITY REGULATORS ===
+    "malic acid": {
+      name: "Malic Acid",
+      aliases: ["e296", "dl-malic acid"],
+      rating: "yellow",
+      banned_in: [],
+      description: "Malic acid is an organic acid naturally found in apples, cherries, and tomatoes, used as a flavoring agent and acidity regulator in candy, beverages, chewing gum, and baked goods. It's responsible for the sour taste in many candies ('Warheads' and similar extremely sour candies use malic acid). At typical food use levels, it's safe. High concentrations (as in extremely sour candy) can cause dental enamel erosion and mouth sores — particularly concerning in children who eat large amounts of sour candy. Otherwise, a low-concern additive.",
+      what_to_do: "Generally safe. The main concern is dental enamel erosion from frequent consumption of heavily acidified sour candies. Not a reason to avoid foods that contain it in normal amounts."
+    },
+    "lactic acid": {
+      name: "Lactic Acid",
+      aliases: ["e270"],
+      rating: "green",
+      banned_in: [],
+      description: "Lactic acid is an organic acid naturally produced by fermentation — it's what gives yogurt, sourdough bread, and fermented vegetables their sour flavor. As a food additive, it's used as a preservative, flavoring, and pH adjuster in a wide range of products. Lactic acid is essentially a fermentation byproduct and is completely safe at any realistic dietary level. It's one of the more naturally-derived and well-tolerated food acids. Its presence in a product often indicates fermentation-based preservation rather than synthetic chemical preservation.",
+      what_to_do: "Green light. No concern. Often a sign of a more naturally preserved product. Found in yogurt, cheese, pickles, sourdough, and many other fermented or acidified foods."
+    },
+    "fumaric acid": {
+      name: "Fumaric Acid",
+      aliases: ["e297"],
+      rating: "green",
+      banned_in: [],
+      description: "Fumaric acid is a naturally occurring organic acid found in some plants and produced in the human body during cellular respiration. As a food additive, it's used as a tart flavoring and acidulant in beverages, baked goods, wine, candy, and gelatin. It's one of the most stable food acids — heat and moisture resistant — making it effective in dry mixes and baked goods. Safety profile is very good; it's approved worldwide and found to be safe in extensive studies. A derivative (dimethyl fumarate) is used as a multiple sclerosis drug, demonstrating the compound's known pharmacological profile.",
+      what_to_do: "Green light. No concern. One of the safer food acids. Found in powdered drink mixes, pie fillings, baked goods, and gummy candies."
+    },
+    "glucono delta-lactone": {
+      name: "Glucono Delta-Lactone (GDL)",
+      aliases: ["gdl", "e575", "glucono-delta-lactone"],
+      rating: "green",
+      banned_in: [],
+      description: "Glucono delta-lactone is a naturally occurring acidulant derived from glucose fermentation, used as a leavening agent, acidifier, and coagulant in tofu, cheese, baked goods, and meat products. When dissolved in water, it hydrolyzes to gluconic acid. GDL is one of the most benign food additives — it's essentially a glucose derivative with very low toxicity, approved everywhere, and has no known health concerns at any realistic food consumption level. It's the compound used to make silken tofu.",
+      what_to_do: "Green light. No concern. A clean, naturally derived acidifier. Its presence in tofu and cheese is a sign of a well-controlled manufacturing process."
+    },
+
+    // === ANTICAKING / FLOW AGENTS ===
+    "sodium aluminosilicate": {
+      name: "Sodium Aluminosilicate (Aluminosilicate)",
+      aliases: ["e554", "sodium silicoaluminate", "aluminum silicate"],
+      rating: "yellow",
+      banned_in: ["EU (restricted)"],
+      description: "Sodium aluminosilicate is an aluminum-containing anticaking agent used in table salt, powdered milk, flour, soup mixes, and seasoning blends. It prevents clumping by absorbing moisture. The concern is the aluminum content — aluminum is a neurotoxin at high doses, and accumulation over decades has been associated with increased Alzheimer's disease risk in some studies (though causality remains debated). People with kidney disease are at higher risk of aluminum accumulation because kidneys are the primary excretion route. The EU has restricted it more than the FDA. Lower-risk alternatives like silicon dioxide are available.",
+      what_to_do: "Check salt, powdered soups, and seasoning blends. For general population, exposure from food sources is considered low-risk. For people with kidney disease or those minimizing aluminum exposure, look for silicon dioxide as the anticaking agent instead."
+    },
+    "yellow prussiate of soda": {
+      name: "Yellow Prussiate of Soda (Sodium Ferrocyanide)",
+      aliases: ["yps", "sodium ferrocyanide", "e535"],
+      rating: "yellow",
+      banned_in: ["EU (restricted)"],
+      description: "Yellow prussiate of soda (sodium ferrocyanide) is an anticaking agent used in table salt to prevent clumping. Despite the alarming name — 'prussiate' refers to the cyanide component — ferrocyanide is a tightly bound, stable complex and is not toxic in the same way as free cyanide at food use levels. However, it can decompose under certain acidic conditions to release free cyanide, which has raised concern among some researchers. The EU restricts it and recommends silicon dioxide as an alternative. At the levels used in table salt, it's considered safe by most regulatory agencies, but its name masks a more complex chemistry than most people assume.",
+      what_to_do: "Low concern at food use levels. Check table salt ingredient lists if you want to avoid it — plain sodium chloride with no additives, or sea salt with no anticaking agents, is easy to find. Silicon dioxide is a safer alternative."
+    },
+    "calcium silicate": {
+      name: "Calcium Silicate",
+      aliases: ["e552"],
+      rating: "green",
+      banned_in: [],
+      description: "Calcium silicate is a naturally occurring mineral compound used as an anticaking agent in table salt, baking powder, and powdered foods. It's also used as an antacid (the same compound in some over-the-counter antacid products). Safety profile is excellent — it's approved worldwide, non-toxic at food use levels, and considered one of the cleanest anticaking agents available. No known health concerns at realistic dietary exposure.",
+      what_to_do: "Green light. No concern. A clean anticaking agent with no known risks. Found in table salt, baking powder, and some spice blends."
+    },
+    "magnesium stearate": {
+      name: "Magnesium Stearate",
+      aliases: ["e470b", "magnesium salt of stearic acid"],
+      rating: "yellow",
+      banned_in: [],
+      description: "Magnesium stearate is a white powder made from stearic acid (a saturated fat) and magnesium, used as a flow agent in supplements, medications, and powdered foods. It prevents ingredients from sticking to manufacturing equipment. In supplements, it's a controversial additive — some claims suggest it suppresses T-cell immune function, though this evidence comes from lab studies using unrealistic concentrations. At food/supplement use levels, these concerns don't translate to real-world risk. The more legitimate concern is that magnesium stearate is a filler that adds no nutritional value and is primarily used for manufacturing convenience.",
+      what_to_do: "Low concern at supplement and food use levels. More common in capsule supplements than in food. Not a reason to avoid a product, but if you're choosing between two supplements and one has less filler, the cleaner product is preferable."
+    },
+
+    // === ANTIOXIDANTS / PRESERVATIVES ===
+    "rosemary extract": {
+      name: "Rosemary Extract",
+      aliases: ["rosemary oil extract", "e392", "carnosic acid", "rosmarinic acid"],
+      rating: "green",
+      banned_in: [],
+      description: "Rosemary extract is a natural antioxidant derived from the herb Rosmarinus officinalis, used as a preservative to extend shelf life of fats, oils, meats, and snack foods. It's genuinely effective at preventing oxidation and rancidity. Unlike BHA, BHT, and TBHQ (the synthetic alternatives), rosemary extract has no toxicity concerns and may actually have health benefits — carnosic acid and rosmarinic acid (the active antioxidants) have demonstrated anti-inflammatory and neuroprotective properties in research. Its presence on a label instead of synthetic antioxidants is a positive sign about manufacturer standards.",
+      what_to_do: "Green light — one of the best preservatives you can see on a label. If you're comparing two products and one uses rosemary extract while the other uses BHA/BHT, the rosemary extract product is clearly preferable."
+    },
+    "mixed tocopherols": {
+      name: "Mixed Tocopherols (Natural Vitamin E)",
+      aliases: ["tocopherols", "d-alpha-tocopherol", "e306", "natural vitamin e", "vitamin e"],
+      rating: "green",
+      banned_in: [],
+      description: "Mixed tocopherols are natural forms of vitamin E extracted from soybean, sunflower, or other vegetable oils, used as antioxidant preservatives in foods and supplements. Unlike synthetic dl-alpha-tocopherol, natural tocopherols consist of multiple isomers (alpha, beta, gamma, delta) and are more bioavailable. They're an excellent natural preservative with genuine nutritional benefit — essentially adding vitamin E to a product while preventing rancidity. This is one of the cleanest preservative options available. Seeing 'mixed tocopherols' instead of BHA/BHT is a strong positive signal.",
+      what_to_do: "Green light. One of the ideal preservatives — safe, effective, and nutritionally beneficial. Choose products using tocopherols over those using BHA, BHT, or TBHQ when possible."
+    },
+    "ascorbyl palmitate": {
+      name: "Ascorbyl Palmitate",
+      aliases: ["e304", "l-ascorbyl palmitate"],
+      rating: "green",
+      banned_in: [],
+      description: "Ascorbyl palmitate is a fat-soluble form of vitamin C used as an antioxidant preservative in vegetable oils, fats, and fat-containing products. Unlike water-soluble ascorbic acid, ascorbyl palmitate can protect fat molecules from oxidation. It's generally considered safe at food use levels, is approved worldwide, and contributes some vitamin C activity. One note: at very high doses in animal studies, it paradoxically acted as a pro-oxidant — but this is not relevant at food use levels. Paradoxically, some evidence suggests ascorbyl palmitate promotes lipid oxidation in emulsified foods — but this doesn't affect its safety profile for consumption.",
+      what_to_do: "Green light at food use levels. No significant concern. Seeing it as a preservative in fat-containing products is generally a positive sign — it's performing an antioxidant function similar to natural vitamin E."
+    },
+
+    // === PHOSPHATES ===
+    "sodium tripolyphosphate": {
+      name: "Sodium Tripolyphosphate (STPP)",
+      aliases: ["stpp", "e451", "triphosphate", "pentasodium triphosphate"],
+      rating: "yellow",
+      banned_in: ["EU restricts"],
+      description: "Sodium tripolyphosphate is a polyphosphate preservative and water-retention agent used in seafood, processed poultry, deli meats, and some canned goods. It's used to retain water in shrimp, scallops, and salmon — which means the product weighs more and appears firmer, but you're paying for water. Shrimp treated with STPP can absorb 7-10% of their weight in added water. Beyond the consumer fraud aspect, STPP contributes to overall inorganic phosphate intake, which at high levels is associated with kidney damage, cardiovascular calcification, and accelerated aging. Like other phosphates, its absorption rate is higher than naturally occurring organic phosphates.",
+      what_to_do: "Check seafood labels for 'sodium tripolyphosphate' or 'phosphates' — this indicates water-injected product. Wild-caught and 'dry' labeled seafood should be phosphate-free. Limit total inorganic phosphate intake across processed foods — it adds up."
+    },
+    "sodium hexametaphosphate": {
+      name: "Sodium Hexametaphosphate",
+      aliases: ["shmp", "e452", "metaphosphates", "calgon"],
+      rating: "yellow",
+      banned_in: [],
+      description: "Sodium hexametaphosphate is a chain phosphate used as an emulsifier, thickener, water softener, and sequestrant in processed cheese, beverages, seafood, and canned goods. It prevents calcium from crystallizing in beverages and keeps emulsions stable. Like all polyphosphates, it contributes to inorganic phosphate intake. It's used in the same product Calgon, the water softener — which makes its food use less intuitive. At typical food exposure, it's considered safe by FDA and EFSA, but the accumulation of phosphate from multiple processed food sources is the real concern.",
+      what_to_do: "Low individual concern, but another entry in the phosphate accumulation problem. Check processed cheese, flavored beverages, and canned seafood. The cleaner your overall processed food consumption, the less this matters."
+    },
+
+    // === NATURAL COLORANTS (more) ===
+    "beet extract": {
+      name: "Beet Extract / Betanin",
+      aliases: ["beetroot red", "betanin", "e162", "beet juice concentrate", "beet powder"],
+      rating: "green",
+      banned_in: [],
+      description: "Beet extract (betanin) is a natural red-pink dye derived from red beets, used as a colorant in ice cream, candy, yogurt, juices, and baked goods. It's one of the most benign food colorants available — derived from an actual vegetable with established nutritional benefits. Betanin is an antioxidant. The most notable effect of consuming beet extract: it can turn urine and stools pink or red (beeturia), which is harmless but can be alarming if unexpected. This can also occur with natural beet consumption. No toxicity concerns at any realistic dietary dose.",
+      what_to_do: "Green light. One of the cleanest food colorants available. Its presence instead of Red 40 is strongly positive. Don't be alarmed by pink urine after eating beet-colored products — it's harmless."
+    },
+    "paprika extract": {
+      name: "Paprika Extract / Paprika Oleoresin",
+      aliases: ["paprika oleoresin", "e160c", "capsanthin", "capsorubin"],
+      rating: "green",
+      banned_in: [],
+      description: "Paprika extract is a natural orange-red colorant derived from sweet red peppers (Capsicum annuum). The active compounds, capsanthin and capsorubin, provide the orange-red color. It's used in cheeses, sausages, sauces, chips, and seasoning blends. Paprika extract may also contain trace amounts of capsaicin (the heat compound) depending on the variety used, but at colorant doses, this is negligible. Generally considered one of the safer natural colorants with no significant toxicity concerns. Some people with pepper allergies should check if they react to it.",
+      what_to_do: "Green light. A natural colorant derived from peppers with no significant health concerns. Preferable to synthetic red/orange dyes. If you have pepper or capsicum allergy, check ingredient lists."
+    },
+    "grape skin extract": {
+      name: "Grape Skin Extract (Enocyanin)",
+      aliases: ["enocianina", "e163", "grape color extract", "anthocyanins"],
+      rating: "green",
+      banned_in: [],
+      description: "Grape skin extract provides a purple-red color from the anthocyanin pigments in grape skins. Anthocyanins are powerful antioxidants — the same class of compounds that make blueberries and red wine celebrated for their health properties. Used in beverages, candy, yogurt, and jam. It's one of the few food colorants that may actually be beneficial for health at food use levels. Approved worldwide, natural origin, no known toxicity concerns.",
+      what_to_do: "Green light — genuinely beneficial. This is one of the best colorants you can see on a label. The anthocyanins have well-documented antioxidant and anti-inflammatory properties."
+    },
+    "black carrot concentrate": {
+      name: "Black Carrot Concentrate",
+      aliases: ["black carrot extract", "daucus carota", "anthocyanins from black carrot"],
+      rating: "green",
+      banned_in: [],
+      description: "Black carrot concentrate is a natural deep-purple colorant derived from black carrots (a variety of Daucus carota), rich in anthocyanins. It's used as a replacement for synthetic red/blue dyes in confectionery, beverages, and dairy products. As a natural source of anthocyanins, it has antioxidant properties similar to grape skin extract and berry extracts. Growing in popularity as a clean-label alternative to synthetic dyes. No known toxicity concerns. One of the cleanest red/purple colorants available.",
+      what_to_do: "Green light. A natural, antioxidant-rich colorant. Its use signals a manufacturer choosing clean ingredients over synthetic dyes. No concerns."
+    },
+
+    // === THICKENERS / GUMS ===
+    "pectin": {
+      name: "Pectin",
+      aliases: ["e440", "apple pectin", "citrus pectin"],
+      rating: "green",
+      banned_in: [],
+      description: "Pectin is a naturally occurring polysaccharide found in the cell walls of fruits, particularly apples and citrus. As a food additive, it's extracted from apple pomace or citrus peels and used as a gelling agent in jams, jellies, fruit preparations, and confectionery. It's also a well-established dietary fiber with numerous health benefits — it lowers LDL cholesterol, feeds beneficial gut bacteria, slows glucose absorption, and has been studied for anti-cancer properties. Pectin is one of the most nutritionally beneficial food additives — essentially adding fruit-derived fiber to processed products. Approved worldwide.",
+      what_to_do: "Green light — actually beneficial. Pectin from whole fruit is even better, but as food additives go, pectin is excellent. Its presence in a product often improves its nutritional profile."
+    },
+    "agar agar": {
+      name: "Agar Agar",
+      aliases: ["agar", "e406", "japan agar", "kanten"],
+      rating: "green",
+      banned_in: [],
+      description: "Agar agar is a natural gelling agent derived from red algae/seaweed, used in desserts, candy, dairy alternatives, and microbiological culture media. It's been used in Asian cuisine for centuries. Unlike gelatin (which is animal-derived), agar is plant-based and vegan-friendly. It forms a firmer gel than gelatin and is heat-stable. From a health standpoint, it's largely indigestible — acting as a soluble dietary fiber — and feeds beneficial gut bacteria. No toxicity concerns at any realistic dietary level. Used widely in Japan in traditional confectionery.",
+      what_to_do: "Green light. One of the safest thickeners and gelling agents available. Vegan-friendly. Its use in products indicates a clean-label approach to texture. No concerns."
+    },
+    "konjac": {
+      name: "Konjac (Glucomannan)",
+      aliases: ["konjac gum", "glucomannan", "konjac flour", "e425"],
+      rating: "yellow",
+      banned_in: ["EU (banned from certain candy products)", "UK", "Australia (mini jelly cups banned)"],
+      description: "Konjac is derived from the corm of the konjac plant (Amorphophallus konjac) and produces glucomannan, a highly viscous soluble fiber. It's used in noodles (shirataki), gummies, dietary supplements, and thickened beverages. The EU and Australia have banned konjac from jelly mini-cups because the dense, highly elastic gel can cause choking, particularly in children and elderly people — it's been associated with choking fatalities. As a dietary fiber, glucomannan has strong evidence for promoting fullness, lowering cholesterol, and improving blood sugar. The safety concern is the texture/choking hazard in certain product formats, not the compound itself.",
+      what_to_do: "Safe in shirataki noodles and supplements for adults. AVOID konjac-based mini jelly cups and highly elastic candy products especially for children and the elderly — the EU and Australia banned these formats for good reason. The fiber itself is beneficial when consumed safely."
+    },
+    "gellan gum": {
+      name: "Gellan Gum",
+      aliases: ["e418"],
+      rating: "yellow",
+      banned_in: [],
+      description: "Gellan gum is a microbial polysaccharide produced by the bacterium Sphingomonas elodea through fermentation. Used as a gelling agent and stabilizer in beverages, dairy products, jelly, and plant-based milks. It's approved worldwide and considered safe at typical food use levels. Some animal studies at very high doses (levels never achievable through food) showed potential effects on gut health. Emerging research on emulsifiers and gut microbiome applies broadly to food-grade polysaccharides, and gellan gum isn't exempt from general scrutiny of this class. However, available evidence puts it significantly below carrageenan or CMC in terms of concern.",
+      what_to_do: "Generally safe. Its presence is more notable as a signal of a processed product than as an individual health concern. Check plant-based beverages and jelly products. Lower concern than carrageenan or CMC."
+    },
+    "sodium alginate": {
+      name: "Sodium Alginate",
+      aliases: ["alginic acid", "e400", "e401", "e402", "alginate"],
+      rating: "green",
+      banned_in: [],
+      description: "Sodium alginate is derived from brown seaweed and used as a thickener, stabilizer, and gelling agent in ice cream, salad dressings, yogurt, and modernist cuisine (spherification). Like pectin and agar, alginate is a dietary fiber from natural sources with a good safety profile. It's used therapeutically as a barrier agent in acid reflux medications (like Gaviscon). Alginates have been studied for the ability to bind heavy metals in the gut, potentially reducing their absorption — suggesting a mild protective role. Approved worldwide, no significant toxicity concerns.",
+      what_to_do: "Green light. A seaweed-derived fiber with a good safety record and potential health benefits. No concerns at food use levels."
+    },
+    "hydroxypropyl methylcellulose": {
+      name: "Hydroxypropyl Methylcellulose (HPMC)",
+      aliases: ["hypromellose", "e464", "hpmc"],
+      rating: "yellow",
+      banned_in: [],
+      description: "HPMC is a chemically modified cellulose used as a thickener, emulsifier, and bulking agent in baked goods, gluten-free products, plant-based meat alternatives, and supplement capsules. It's also used as a water-based alternative to gelatin capsules. HPMC is non-digestible and insoluble — it passes through the gut without being metabolized. It's generally considered safe and is approved worldwide. Its main role in plant-based meat (Beyond Meat, Impossible) is as a binder replacing gluten. No significant toxicity concerns, but its presence signals heavy processing. Some people with sensitive digestive systems may react to high concentrations of non-digestible cellulose-based additives.",
+      what_to_do: "Generally safe. Primarily signals a processed product. Found widely in plant-based meat, gluten-free baked goods, and dietary supplements. No active reason to avoid it, but its presence means the product relies on chemical modification of cellulose for texture."
+    },
+    "tara gum": {
+      name: "Tara Gum",
+      aliases: ["e417"],
+      rating: "green",
+      banned_in: [],
+      description: "Tara gum is a natural thickener derived from the endosperm of the tara shrub (Caesalpinia spinosa), native to Peru. It's used as a thickener in dairy products, dressings, and sauces. As a natural galactomannan fiber (similar to locust bean gum), it has a good safety profile with minimal processing concerns. Approved by FDA and EFSA. Studies show no significant toxicity at food use levels. It's one of the lesser-known thickeners but has a clean profile similar to guar gum and locust bean gum.",
+      what_to_do: "Green light. One of the cleaner thickeners. No concerns at food use levels."
+    },
+    "polyglycerol esters": {
+      name: "Polyglycerol Esters of Fatty Acids (PGFE)",
+      aliases: ["e475", "polyglycerol esters"],
+      rating: "yellow",
+      banned_in: [],
+      description: "Polyglycerol esters are emulsifiers made from polyglycerol and fatty acids, used in low-fat bakery products, chocolate, and margarine as a fat replacer and emulsifier. They reduce the need for cocoa butter in chocolate and extend shelf life in baked goods. Research on their gut microbiome effects is limited compared to CMC and polysorbate 80, but they belong to the same class of emulsifiers under scrutiny. At current food use levels, they're considered safe by EFSA and FDA. Their presence primarily signals heavily engineered processed food.",
+      what_to_do: "Moderate concern — in the same class as other synthetic emulsifiers under ongoing microbiome research. Not an immediate red flag, but if you're reducing emulsifier exposure generally, this is one to note in chocolate and reduced-fat products."
+    },
+    "sucrose esters": {
+      name: "Sucrose Esters of Fatty Acids",
+      aliases: ["sucrose esters", "e473"],
+      rating: "yellow",
+      banned_in: [],
+      description: "Sucrose esters are emulsifiers made by chemically linking sucrose (table sugar) with fatty acids. Used in baked goods, dairy, and confectionery to improve texture and extend shelf life. They're considered safer than some other synthetic emulsifiers because they're made from natural starting materials (sugar + vegetable fats). Limited evidence of gut microbiome disruption compared to CMC or polysorbate 80. Generally low concern but belongs to the same additive class facing increased scrutiny in microbiome research.",
+      what_to_do: "Lower concern among emulsifiers. Generally safe at food use levels. Found in some chocolates, baked goods, and dairy products. Not a primary concern unless you're limiting all synthetic emulsifiers."
+    },
+
+    // === LEAVENING AGENTS ===
+    "cream of tartar": {
+      name: "Cream of Tartar (Potassium Bitartrate)",
+      aliases: ["potassium bitartrate", "potassium hydrogen tartrate", "e336"],
+      rating: "green",
+      banned_in: [],
+      description: "Cream of tartar is a natural byproduct of wine fermentation — it's the potassium salt of tartaric acid that crystallizes on wine barrel walls. Used as a leavening acid in baking powder, a stabilizer for whipped egg whites and cream, and to prevent sugar crystallization in candy. It's essentially a natural food acid with a long history of safe use. Provides potassium and is benign at food use levels. No known health concerns.",
+      what_to_do: "Green light. A natural baking ingredient with no safety concerns. Seen in baking powder, snickerdoodles, and meringues. No action needed."
+    },
+    "ammonium bicarbonate": {
+      name: "Ammonium Bicarbonate",
+      aliases: ["e503", "bakers ammonia", "ammonium hydrogen carbonate"],
+      rating: "yellow",
+      banned_in: [],
+      description: "Ammonium bicarbonate is a leavening agent used in traditional European cookies and crackers (notably Scandinavian cookies) that decomposes entirely into CO2, ammonia, and water during baking — leaving no residue in properly baked products. If the product is underbaked or moist, residual ammonia can remain and give a distinctive smell. For properly manufactured baked goods, it leaves no residue and no health concern. However, it's not suitable for moist or low-temperature baked products where complete decomposition doesn't occur.",
+      what_to_do: "Generally safe in properly baked goods. If crackers or cookies smell of ammonia, the baking process didn't fully decompose it. For sensitive individuals, choose products using sodium bicarbonate or baking powder instead."
+    },
+    "sodium aluminum sulfate": {
+      name: "Sodium Aluminum Sulfate (SALP)",
+      aliases: ["salp", "sas", "e522"],
+      rating: "yellow",
+      banned_in: ["EU (not approved for food use)"],
+      description: "Sodium aluminum sulfate is a slow-acting leavening acid used in commercial double-acting baking powder and some baked goods. It's aluminum-based and is not approved in the EU for food use. As with other aluminum-containing food additives, the concern is contribution to overall aluminum exposure — which at high levels is neurotoxic and has been associated with Alzheimer's-related neurological changes. Regular baking powder labeled 'aluminum-free' uses sodium acid pyrophosphate or cream of tartar instead. The amount from occasional baked goods is likely low, but regular consumers of commercial baked goods may accumulate meaningful aluminum exposure.",
+      what_to_do: "Choose 'aluminum-free' baking powder for home use — brands like Rumford or Bob's Red Mill are widely available. For commercial baked goods, you can't easily control it, but reducing processed baked good consumption generally reduces exposure. An EU-banned additive still permitted in the US."
+    },
+
+    // === MINERALS / FORTIFICATION ===
+    "ferrous sulfate": {
+      name: "Ferrous Sulfate (Iron)",
+      aliases: ["iron", "reduced iron", "ferric orthophosphate", "electrolytic iron", "ferrous gluconate"],
+      rating: "green",
+      banned_in: [],
+      description: "Ferrous sulfate and related iron compounds are added to bread, cereal, pasta, and flour to fortify them with iron — replacing some of the iron lost during milling. Iron deficiency is one of the most common nutritional deficiencies worldwide, particularly affecting women of childbearing age and children. The form of iron matters: ferrous sulfate and ferrous gluconate are more bioavailable than ferric orthophosphate or electrolytic iron, which are cheaper but poorly absorbed. Fortification with iron is a public health success — it has reduced iron deficiency anemia dramatically in populations where it's implemented.",
+      what_to_do: "Green light for most people. Iron fortification provides genuine public health benefit. However, men and postmenopausal women generally consume adequate iron and should not over-rely on fortified foods. If you have hemochromatosis (iron overload disorder), be mindful of highly fortified foods."
+    },
+    "thiamine mononitrate": {
+      name: "Thiamine Mononitrate (Vitamin B1)",
+      aliases: ["thiamin mononitrate", "vitamin b1"],
+      rating: "green",
+      banned_in: [],
+      description: "Thiamine mononitrate is a stable synthetic form of vitamin B1 (thiamine), used to fortify bread, pasta, cereal, and flour. It replaces thiamine lost during grain milling. Thiamine deficiency causes beriberi, a serious neurological and cardiovascular condition. The mononitrate form (as opposed to thiamine hydrochloride) is more stable in flour and baked goods. At typical fortification levels, it's completely safe. Thiamine is a water-soluble vitamin — excess is excreted, not stored. No toxicity concerns at realistic food intake levels.",
+      what_to_do: "Green light. Nutritional fortification with genuine public health benefit. No concerns."
+    },
+    "folic acid": {
+      name: "Folic Acid (Vitamin B9)",
+      aliases: ["folate", "pteroylglutamic acid", "vitamin b9"],
+      rating: "green",
+      banned_in: [],
+      description: "Folic acid is the synthetic form of folate (vitamin B9), added to enriched grain products since 1998 in the US by FDA mandate. This fortification program has reduced neural tube defects (spina bifida, anencephaly) by approximately 35% — one of the most successful food fortification programs in history. One nuance: synthetic folic acid must be converted to active folate in the body. About 10-15% of the population has MTHFR gene variants that reduce this conversion, potentially leading to unmetabolized folic acid accumulation. For this reason, some researchers prefer methylfolate over folic acid in supplements (not a food fortification concern at these levels).",
+      what_to_do: "Green light for general population. The neural tube defect prevention benefit is substantial and well-proven. People with MTHFR variants should be aware of their folic acid metabolism and may want to discuss methylfolate with their healthcare provider for supplementation."
+    },
+    "niacinamide": {
+      name: "Niacinamide / Niacin (Vitamin B3)",
+      aliases: ["niacin", "nicotinamide", "nicotinic acid", "vitamin b3"],
+      rating: "green",
+      banned_in: [],
+      description: "Niacinamide (nicotinamide) is a form of vitamin B3 used to fortify flour, bread, cereal, and other grain products. Niacin deficiency causes pellagra, a disease historically common in corn-dependent populations. Enrichment programs using niacin have virtually eliminated pellagra in the developed world. The niacinamide form doesn't cause flushing (a reaction to nicotinic acid at higher doses). At fortification levels, it's completely safe. Niacin is essential for energy metabolism and DNA repair. No concerns at food use levels.",
+      what_to_do: "Green light. Essential vitamin fortification with well-proven public health benefit. No concerns at fortification levels."
+    },
+    "potassium chloride": {
+      name: "Potassium Chloride",
+      aliases: ["e508", "nu salt", "no salt", "salt substitute"],
+      rating: "yellow",
+      banned_in: [],
+      description: "Potassium chloride is a salt substitute used to reduce sodium in processed foods while maintaining a salty taste. It's approved as safe for most people and can actually benefit heart health by increasing potassium intake (most Americans are potassium-deficient). However, it has a bitter, metallic aftertaste that many people notice. CRITICAL WARNING: People with kidney disease, taking ACE inhibitors, ARBs, or potassium-sparing diuretics must avoid excessive potassium chloride — their bodies cannot excrete excess potassium, leading to hyperkalemia (dangerous heart rhythm abnormalities). 'Reduced sodium' products using potassium chloride can be genuinely dangerous for this population.",
+      what_to_do: "Generally beneficial for people with normal kidney function and no relevant medications — it's a heart-healthy sodium alternative. CRITICAL: Kidney disease patients and people on certain blood pressure medications must consult their doctor before consuming potassium chloride-containing products. Check low-sodium and salt substitute products."
+    },
+    "calcium chloride": {
+      name: "Calcium Chloride",
+      aliases: ["e509"],
+      rating: "green",
+      banned_in: [],
+      description: "Calcium chloride is a calcium salt used as a firming agent in canned vegetables and fruits, as a coagulant in tofu-making, and as a preservative in sports drinks. In canning, it prevents vegetables from becoming mushy during the heat sterilization process. It's a source of calcium and is used in cheese-making to replace calcium lost during pasteurization. Generally very safe at food use levels. High purity calcium chloride is used medically to treat hypocalcemia. No significant concerns at typical dietary exposure.",
+      what_to_do: "Green light. A naturally derived calcium compound with a good safety profile. Often performing a beneficial function (calcium fortification, texture preservation). No concerns."
+    },
+    "inulin": {
+      name: "Inulin / Chicory Root Fiber",
+      aliases: ["chicory root", "chicory fiber", "chicory root extract", "fos", "fructooligosaccharides"],
+      rating: "green",
+      banned_in: [],
+      description: "Inulin is a prebiotic soluble fiber naturally found in chicory root, garlic, onions, Jerusalem artichokes, and many other plants. As a food additive, it's extracted primarily from chicory root and added to yogurt, cereals, protein bars, and drinks to boost fiber content and serve as a fat replacer. Extensive research demonstrates inulin feeds beneficial gut bacteria (Bifidobacteria and Lactobacillus), improving gut health, immune function, and mineral absorption. However, at high doses (above ~15-20g/day), it causes bloating, gas, and diarrhea — especially in people with IBS or SIBO. The gut fermentation that makes it beneficial also makes it problematic in excess.",
+      what_to_do: "Generally beneficial in moderate amounts. Check high-fiber bars and yogurts — some contain 10-15g per serving, which can cause digestive issues. Start with small amounts if you're not used to prebiotic fiber. If you have IBS, consider limiting inulin-heavy foods."
+    },
+    "psyllium husk": {
+      name: "Psyllium Husk (Psyllium Fiber)",
+      aliases: ["psyllium", "ispaghula", "isabgol"],
+      rating: "green",
+      banned_in: [],
+      description: "Psyllium husk is a soluble fiber from the seed husks of Plantago ovata. It's the active ingredient in Metamucil and used in some baked goods and cereals. Psyllium is one of the most well-studied dietary fibers, with strong evidence for lowering LDL cholesterol (the FDA allows a heart health claim), improving blood sugar control, and treating both constipation and diarrhea. At high doses without adequate water, it can cause choking or intestinal blockage — always take with plenty of water. Generally very safe and beneficial.",
+      what_to_do: "Green light with one precaution: always consume with adequate water (at least 8oz per serving) to prevent choking or esophageal impaction. People with esophageal narrowing should be particularly careful. Otherwise, one of the most beneficial food fibers available."
+    },
+    "sodium bicarbonate": {
+      name: "Sodium Bicarbonate (Baking Soda)",
+      aliases: ["baking soda", "e500", "bicarb", "bicarbonate of soda"],
+      rating: "green",
+      banned_in: [],
+      description: "Sodium bicarbonate (baking soda) is a simple inorganic salt used as a leavening agent, pH adjuster, and acidity regulator in baked goods, beverages, and antacids. It contributes some sodium to diet, which is worth noting for people on sodium-restricted diets. Otherwise, it's one of the most benign food additives — it's been used in food for centuries, has no toxicity concerns, and is completely safe at food use levels. Medically, it's used as an antacid and to treat certain metabolic acidosis conditions.",
+      what_to_do: "Green light. No concerns. Found in virtually all baked goods. Contributes to sodium intake if you're on a very strict low-sodium diet, but the amounts from baked goods are generally minor."
+    },
+    "dextrose": {
+      name: "Dextrose",
+      aliases: ["glucose", "d-glucose", "corn sugar"],
+      rating: "yellow",
+      banned_in: [],
+      description: "Dextrose is pure glucose — a simple sugar derived from corn starch via enzymatic hydrolysis. It's used as a sweetener, humectant, preservative, and fermentation substrate in baked goods, candy, cured meats, and many processed foods. Its glycemic index is 100 — the reference point against which all other foods are compared. This means it causes the fastest and largest blood sugar spike of any dietary carbohydrate. Its presence in processed meats (it feeds the fermentation bacteria in salami and pepperoni) is often overlooked. As an additive, it signals a processed product and contributes to added sugar intake.",
+      what_to_do: "It's essentially pure sugar — treat it the same as any added sugar. Check cured meats (dextrose is in many sausage and pepperoni recipes), candy, and baked goods. Count it toward total added sugar intake."
+    },
+    "trehalose": {
+      name: "Trehalose",
+      aliases: ["mycose", "tremalose"],
+      rating: "yellow",
+      banned_in: [],
+      description: "Trehalose is a naturally occurring disaccharide found in mushrooms, shrimp, and insects, used as a sweetener and food preservative in processed foods. It became widely used in US food production after 2000 when cheap production methods became available. A 2018 Nature paper linked the spread of virulent Clostridioides difficile (C. diff) strains to increased dietary trehalose — suggesting that widespread trehalose consumption may have fueled more lethal C. diff infections in hospitals. The finding was contested but not refuted. C. diff is a serious intestinal pathogen responsible for thousands of deaths annually.",
+      what_to_do: "The C. diff concern is worth taking seriously, especially for elderly individuals or anyone taking antibiotics (which increase C. diff vulnerability). Limiting trehalose consumption is reasonable, especially for high-risk individuals. Check ingredient lists in processed foods, particularly those marketed as 'longer shelf life' products."
+    },
+    "carnauba wax": {
+      name: "Carnauba Wax",
+      aliases: ["e903", "brazil wax", "copernicia cerifera"],
+      rating: "green",
+      banned_in: [],
+      description: "Carnauba wax is a natural wax derived from the leaves of the carnauba palm (Copernicia prunifera) of Brazil, used as a glazing agent on candy, pharmaceutical pills, and some fresh produce. It provides a shiny, protective coating. Despite being used in car wax and floor polish as well, food-grade carnauba wax is purified and different in application context. It's non-digestible and passes through the gut inert. No toxicity concerns at any dietary level. Approved worldwide. Vegan-friendly (unlike beeswax).",
+      what_to_do: "Green light. No concerns. A natural wax coating on candy and pills. No action needed."
+    },
+    "shellac": {
+      name: "Shellac (Resin Glaze)",
+      aliases: ["confectioner's glaze", "pharmaceutical glaze", "e904", "lac resin"],
+      rating: "yellow",
+      banned_in: [],
+      description: "Shellac is a resin secreted by the lac insect (Kerria lacca), native to India and Southeast Asia. It's used as a glazing agent on candy, chocolate-covered nuts, coffee beans, and pharmaceutical tablets to provide a hard, shiny coating. While it's FDA-approved and has no known toxicity, it's an insect-derived product — not suitable for vegans or those following certain religious dietary laws (halal/kosher in some interpretations). Unlike carmine (which is crushed insects), shellac is a secretion from insects, not the insects themselves. It appears on labels as 'confectioner's glaze' or 'resin glaze' without always specifying its origin.",
+      what_to_do: "Check candy and chocolate coating ingredient lists if you follow vegan or certain religious dietary restrictions. 'Confectioner's glaze' or 'resin glaze' on a label means shellac. No health toxicity concern, but a transparency issue for dietary restriction purposes."
+    },
+    "acacia gum expanded": {
+      name: "Quillaia Extract (Saponins)",
+      aliases: ["quillaia", "quillaja extract", "e999", "saponins", "quillaja saponaria"],
+      rating: "yellow",
+      banned_in: ["EU (restricted to beverages only)"],
+      description: "Quillaia extract is derived from the inner bark of the quillaia tree (Quillaja saponaria) and contains saponins — surfactant compounds that produce foam. It's used as a foaming agent in root beer, cocktail mixers, cream sodas, and some soft drinks. Saponins disrupt cell membranes and at high doses are toxic — this is why the EU restricts quillaia extract use to beverages only, at limited concentrations. At approved food use levels, the exposure is considered safe by EFSA, but the dose-dependency of saponin toxicity means regulatory limits matter. It's not suitable for infants.",
+      what_to_do: "Check root beer, cream soda, and cocktail mixers. At beverage use levels, safe for adults and children except infants. Don't confuse with acacia gum (gum arabic), which is unrelated and much safer."
+    },
+    "stearic acid": {
+      name: "Stearic Acid",
+      aliases: ["e570", "octadecanoic acid"],
+      rating: "green",
+      banned_in: [],
+      description: "Stearic acid is a saturated fatty acid naturally found in animal fats and some plant oils (particularly cocoa butter and shea butter). As a food additive, it's used as an anti-caking agent, emulsifier, and flavoring agent. Unlike other saturated fats, stearic acid has a uniquely neutral effect on LDL cholesterol — it's converted to oleic acid (the monounsaturated fat in olive oil) in the body. This is why cocoa butter, which is rich in stearic acid, has less cardiovascular impact than its saturated fat content might suggest. No significant health concerns as a food additive.",
+      what_to_do: "Green light. A naturally occurring saturated fat with neutral cholesterol effects. No concerns at food additive levels. Found in chocolate, hard candy coatings, and some supplements."
+    },
+    "beeswax": {
+      name: "Beeswax",
+      aliases: ["e901", "white beeswax", "yellow beeswax"],
+      rating: "green",
+      banned_in: [],
+      description: "Beeswax is produced by honey bees (Apis mellifera) and used as a glazing and coating agent in candies, chocolates, and some fresh produce. It provides a natural, protective shine. It's non-digestible and passes through the gut inert. No toxicity concerns whatsoever. Not vegan (insect-derived), and some honey-allergic individuals may want to check with their allergist, though beeswax allergic reactions are extremely rare. Otherwise, one of the oldest and most natural food glazing agents available.",
+      what_to_do: "Green light for health. Not suitable for vegans. No action needed for most people."
+    },
+    "invert sugar": {
+      name: "Invert Sugar / Invert Sugar Syrup",
+      aliases: ["trimoline", "invertase", "invert syrup"],
+      rating: "yellow",
+      banned_in: [],
+      description: "Invert sugar is table sugar (sucrose) that has been broken down via acid or the enzyme invertase into its component parts: equal amounts of glucose and fructose. It's sweeter than table sugar, resists crystallization, and retains moisture longer — making it useful in candy, baked goods, soft centers in chocolates, and commercial jams. Metabolically, it's essentially identical to HFCS (both are approximately 50/50 glucose-fructose), and similar concerns about fructose metabolism apply. It's used in premium confectionery as well as mass-market products — but it's still added sugar by another name.",
+      what_to_do: "Count it as added sugar. The fructose component has the same metabolic implications as in HFCS. Don't be fooled by it appearing in 'artisan' or 'premium' products — it's still refined sugar that raises blood sugar and contributes to the same metabolic issues."
+    },
+    "isomaltulose": {
+      name: "Isomaltulose (Palatinose)",
+      aliases: ["palatinose", "isomaltulose"],
+      rating: "green",
+      banned_in: [],
+      description: "Isomaltulose is a naturally occurring disaccharide found in small amounts in honey and sugarcane, now commercially produced via enzymatic conversion of sucrose. It has the same calories as sugar but a much lower glycemic index (~32 vs ~65 for sugar), providing sustained energy release without blood sugar spikes. It's used in energy drinks, sports nutrition, and some confectionery as a slow-release carbohydrate. Approved in the EU, US, and many other countries. Generally well-tolerated. Unique among sugar-derived sweeteners in providing genuine sustained energy rather than just sweetness.",
+      what_to_do: "Green light. One of the better sugar alternatives for people who need actual energy release (athletes, diabetics). Lower glycemic impact than sugar with the same caloric content. Check sports drinks and energy products."
+    },
+    "oat fiber": {
+      name: "Oat Fiber",
+      aliases: ["oat bran", "oat hull fiber", "beta-glucan"],
+      rating: "green",
+      banned_in: [],
+      description: "Oat fiber and oat bran are derived from oats and used as dietary fiber supplements in bread, cereals, and snack bars. Beta-glucan, the soluble fiber in oats, has the strongest evidence base of any dietary fiber for lowering LDL cholesterol — the FDA allows a specific health claim for oat beta-glucan and heart health. It also improves blood sugar control and feeds beneficial gut bacteria. Oat fiber from the hull is primarily insoluble and adds bulk. Both forms have excellent safety profiles and genuine health benefits. Note: oats are often contaminated with gluten during processing — look for certified gluten-free oat products if celiac disease is a concern.",
+      what_to_do: "Green light — genuinely beneficial. Beta-glucan from oats is one of the best-studied dietary fibers. Check for certified gluten-free if celiac disease applies. Higher amounts can cause digestive discomfort if you're not used to fiber-rich foods."
+    },
+    "whey": {
+      name: "Whey / Whey Protein",
+      aliases: ["whey protein concentrate", "whey protein isolate", "wpc", "wpi", "dried whey"],
+      rating: "green",
+      banned_in: [],
+      description: "Whey is the liquid remaining after milk has been curdled and strained, and is one of two proteins in milk (the other being casein). As a food additive and supplement, it's one of the most complete and bioavailable protein sources available — containing all essential amino acids and particularly high in branched-chain amino acids (BCAAs) important for muscle protein synthesis. Whey protein is used in protein bars, shakes, baked goods, and many processed foods. Safety profile is excellent. People with milk/dairy allergies should avoid it. Lactose-sensitive individuals generally tolerate whey protein isolate (WPI) but may not tolerate whey protein concentrate (WPC), which contains more lactose.",
+      what_to_do: "Green light for most people. One of the best protein sources available. Avoid if dairy-allergic. If lactose-sensitive, prefer whey protein isolate (WPI) over concentrate (WPC). Check for added sweeteners and flavors in commercial protein products — the whey itself is clean."
+    },
+    "sodium caseinate": {
+      name: "Sodium Caseinate / Casein",
+      aliases: ["casein", "calcium caseinate", "potassium caseinate", "milk protein"],
+      rating: "yellow",
+      banned_in: [],
+      description: "Sodium caseinate is a derivative of casein (the main protein in milk), used as a protein source, emulsifier, and texturizer in coffee creamers, protein shakes, processed cheese, and infant formula. As a protein source, it's nutritionally complete. However, casein breaks down in the gut into casomorphins — peptides with opioid-like activity that bind to opioid receptors. The significance of this in normal dietary consumption is debated — casomorphins from food are largely broken down before reaching systemic circulation. People with milk protein allergy (as opposed to lactose intolerance) must avoid casein. It's also not suitable for vegans.",
+      what_to_do: "Generally safe for most people as a protein source. Avoid if you have milk protein allergy (different from lactose intolerance). Check non-dairy creamers — many contain casein and are therefore not truly dairy-free despite the label. Not vegan."
+    },
+    "carob powder": {
+      name: "Carob Powder",
+      aliases: ["carob", "locust bean flour", "ceratonia siliqua"],
+      rating: "green",
+      banned_in: [],
+      description: "Carob powder is made from the dried and ground pods of the carob tree (Ceratonia siliqua). Used as a natural chocolate substitute and food coloring/flavoring in candies, cereals, and baked goods. Carob is caffeine-free (unlike cocoa), naturally sweet (requiring less added sugar), high in fiber, and contains calcium, potassium, and B vitamins. It doesn't contain the flavonoids that give dark chocolate its health reputation, but it's a very clean ingredient with no concerns. Popular in health food products and infant/toddler snacks because of its gentle flavor and lack of stimulants.",
+      what_to_do: "Green light. A genuinely clean, nutritious ingredient. Particularly useful as a caffeine-free chocolate substitute for children and caffeine-sensitive adults."
+    },
+    "lutein": {
+      name: "Lutein",
+      aliases: ["e161b", "lutein esters"],
+      rating: "green",
+      banned_in: [],
+      description: "Lutein is a natural yellow-orange carotenoid pigment found in leafy greens, eggs, and marigold flowers. It's used as a natural yellow food coloring and functional ingredient. Beyond its role as a colorant, lutein is well-established for eye health — it accumulates in the macula of the retina and is linked to reduced risk of age-related macular degeneration and cataracts. It's also a potent antioxidant and has been studied for cognitive health benefits. One of the few food colorants that provides measurable nutritional benefit. No toxicity concerns at any realistic dietary dose.",
+      what_to_do: "Green light — actually beneficial. Seeing lutein used as a colorant is a positive sign. No action needed."
+    },
+    "astaxanthin": {
+      name: "Astaxanthin",
+      aliases: ["e161j", "haematococcus pluvialis extract"],
+      rating: "green",
+      banned_in: [],
+      description: "Astaxanthin is a carotenoid that gives salmon, shrimp, and flamingos their pink-red color. It's produced naturally by the microalgae Haematococcus pluvialis. As a food additive, it's used in aquaculture feed (to color farm-raised salmon) and as a dietary supplement. Research indicates astaxanthin is one of the most potent natural antioxidants known — significantly more powerful than beta-carotene or vitamin E. It crosses the blood-brain barrier and has been studied for neuroprotection, anti-inflammatory effects, and skin protection. No toxicity concerns.",
+      what_to_do: "Green light — genuinely health-promoting. Worth noting that farm-raised salmon's pink color comes from supplemental astaxanthin (either synthetic or natural — check if product specifies). The natural algae-derived form is preferred. No health concerns."
+    },
+    "maltose": {
+      name: "Maltose (Malt Sugar)",
+      aliases: ["malt sugar", "maltobiose"],
+      rating: "yellow",
+      banned_in: [],
+      description: "Maltose is a disaccharide made of two glucose units, naturally produced by starch digestion in the gut and by enzymatic breakdown of starch in malting. It's found naturally in malted barley (used in beer and malt vinegar) and sweet potatoes. As a food additive, it's used as a sweetener in cereals, candy, and Asian food products. Its glycemic index is very high (approximately 105 — higher than glucose). Despite being a 'natural' sugar, its effect on blood sugar is significant. It's derived from whole grains but is still a refined, quickly absorbed sugar when used as an additive.",
+      what_to_do: "Count as added sugar with a high glycemic impact. Check cereals, Asian sauces, and candy. People managing blood sugar should be aware maltose raises blood glucose as rapidly as glucose itself."
+    },
+    "oleo resin capsicum": {
+      name: "Capsicum Oleoresin (Paprika Oleoresin)",
+      aliases: ["capsicum extract", "oleoresin capsicum", "e160c", "chili extract"],
+      rating: "green",
+      banned_in: [],
+      description: "Capsicum oleoresin is a concentrated extract from chili peppers (Capsicum species) providing both color (from carotenoids) and heat (from capsaicinoids). It's used as a natural red/orange colorant and flavor in sausages, snack foods, sauces, and seasonings. The capsaicin in it has well-documented anti-inflammatory and metabolism-boosting properties. At food coloring doses, the heat is typically negligible. At higher concentrations in spicy foods, capsaicin may cause gastric irritation in people with sensitive stomachs. No toxicity concerns.",
+      what_to_do: "Green light. A natural colorant and flavoring derived from peppers with potential health benefits. Only concern is gastric irritation in people with GERD or sensitive stomachs at high concentrations."
+    },
+    "tricalcium phosphate": {
+      name: "Tricalcium Phosphate (TCP)",
+      aliases: ["tcp", "e341", "calcium phosphate", "tribasic calcium phosphate"],
+      rating: "yellow",
+      banned_in: [],
+      description: "Tricalcium phosphate is a calcium and phosphorus compound used as an anticaking agent in powdered spices and supplements, and as a calcium fortification agent in non-dairy beverages. As a phosphate, it contributes to overall inorganic phosphate load — a concern at high cumulative intake. However, as a calcium source it's actually beneficial, and it's the standard form of calcium in many supplement and fortified beverages. At typical food use levels, the phosphate concern is minimal compared to the benefit as a calcium source. People with kidney disease should monitor phosphate intake from all sources.",
+      what_to_do: "Generally beneficial as a calcium source at food use levels. Kidney disease patients should monitor cumulative phosphate intake from all processed food sources. Found in powdered drink mixes, plant-based milks, and some supplements."
+    },
+    "sodium lactate": {
+      name: "Sodium Lactate",
+      aliases: ["e325", "potassium lactate", "e326"],
+      rating: "green",
+      banned_in: [],
+      description: "Sodium lactate is the sodium salt of lactic acid, used as a preservative, humectant, and flavor enhancer in processed meats, marinated poultry, sauces, and bakery products. It extends shelf life by reducing water activity and inhibiting pathogen growth. As a lactic acid derivative, it's essentially a fermentation byproduct salt with a good safety profile. It's also used in hospital intravenous solutions. At food use levels, no toxicity concerns. Its presence in processed meats is actually a relatively clean preservative choice compared to sodium nitrite or artificial preservatives.",
+      what_to_do: "Green light. One of the cleaner preservatives used in processed meats. No significant health concerns at food use levels."
+    },
+    "microalgae oil": {
+      name: "Algae Oil / Microalgae DHA",
+      aliases: ["algal oil", "dha algae oil", "life's dha", "omega-3 algae"],
+      rating: "green",
+      banned_in: [],
+      description: "Algae oil is a vegetarian/vegan source of omega-3 fatty acids (particularly DHA — docosahexaenoic acid), extracted from microalgae. Fish accumulate DHA by eating algae — algae oil goes directly to the source. DHA is critical for brain development, eye health, and cardiovascular function. It's added to infant formula, plant-based foods, and supplements as a clean-label omega-3 source. Safety is excellent — no PCB or mercury contamination concerns that exist with fish oil. Well-studied with strong evidence for health benefits. The American Heart Association recognizes omega-3s from algae as equivalent to fish sources.",
+      what_to_do: "Green light — genuinely beneficial. One of the best DHA sources for vegetarians and people wanting to avoid fish-derived supplements. Look for it in infant formula and plant-based foods as a positive ingredient."
+    },
+    "calcium pantothenate": {
+      name: "Calcium Pantothenate (Vitamin B5)",
+      aliases: ["pantothenic acid", "vitamin b5", "pantothenate"],
+      rating: "green",
+      banned_in: [],
+      description: "Calcium pantothenate is the calcium salt of pantothenic acid (vitamin B5), used to fortify cereals, bread, energy drinks, and supplements. Vitamin B5 is essential for synthesizing coenzyme A (CoA), which is critical for fat and carbohydrate metabolism. Deficiency is rare because B5 is found in nearly all foods, but fortification adds a safety net. At any realistic dietary dose, it's completely safe — it's a water-soluble vitamin and excess is excreted. No toxicity concerns even at very high supplement doses.",
+      what_to_do: "Green light. Essential vitamin fortification with no safety concerns."
+    },
+    "pyridoxine hydrochloride": {
+      name: "Pyridoxine Hydrochloride (Vitamin B6)",
+      aliases: ["vitamin b6", "pyridoxine", "pyridoxal"],
+      rating: "green",
+      banned_in: [],
+      description: "Pyridoxine hydrochloride is a stable synthetic form of vitamin B6, used to fortify cereals, bread, protein bars, and supplements. Vitamin B6 is essential for amino acid metabolism, neurotransmitter synthesis, and immune function. At food fortification levels, it's completely safe. Very high supplemental doses (above 200mg/day consistently) can cause peripheral neuropathy — but this is entirely irrelevant at food fortification levels, which are measured in milligrams not hundreds of milligrams. Standard nutritional fortification.",
+      what_to_do: "Green light at food fortification levels. No concerns. The neuropathy concern is only at therapeutic supplement doses far above what food provides."
+    },
+    "calcium phosphate monobasic": {
+      name: "Monocalcium Phosphate",
+      aliases: ["monocalcium phosphate", "e341i", "calcium dihydrogen phosphate"],
+      rating: "yellow",
+      banned_in: [],
+      description: "Monocalcium phosphate is the most common leavening acid in commercial baking powder and self-rising flour. It reacts with sodium bicarbonate to produce CO2 and make baked goods rise. Like other phosphate additives, it contributes to inorganic phosphate intake — which at high cumulative levels is associated with kidney stress and cardiovascular calcification. At the amounts found in baked goods, concern is low for healthy people. However, the accumulation of phosphate from multiple processed food sources (soft drinks with phosphoric acid + processed meats + baked goods + fast food) can add up significantly.",
+      what_to_do: "Low individual concern, but part of the overall phosphate accumulation picture. Check your total phosphate load across processed foods if you eat a heavily processed diet. Kidney disease patients should consult with their dietitian about total phosphate intake."
+    },
+    "dipotassium phosphate": {
+      name: "Dipotassium Phosphate",
+      aliases: ["e340", "potassium phosphate", "dkp"],
+      rating: "yellow",
+      banned_in: [],
+      description: "Dipotassium phosphate is an emulsifier and mineral salt used primarily in non-dairy coffee creamers, powdered beverages, and instant foods. It prevents precipitation of calcium and magnesium from hard water (making coffee creamers dissolve smoothly). As a phosphate, it contributes to inorganic phosphate load with the same concerns as other phosphate additives. Additionally, the high potassium content is relevant for people with kidney disease who can't properly excrete potassium. Found in the majority of commercial non-dairy creamers.",
+      what_to_do: "Check non-dairy coffee creamers, powdered instant drinks, and sports beverages. Kidney disease patients should avoid excess potassium from multiple sources. Part of the broader phosphate accumulation concern in heavily processed diets."
+    },
+    "trisodium citrate": {
+      name: "Trisodium Citrate (Sodium Citrate)",
+      aliases: ["sodium citrate", "e331", "trisodium citrate dihydrate"],
+      rating: "green",
+      banned_in: [],
+      description: "Trisodium citrate is the sodium salt of citric acid, used as an acidity regulator, emulsifier (especially in processed cheese), and flavor enhancer. It's in processed cheese slices (it gives American cheese its melt-ability), carbonated beverages, and some confectionery. Medically, it's used as a urinary alkalizer and anticoagulant. At food use levels, it's very safe — the main contribution is to sodium intake. It's significantly safer than synthetic emulsifiers. Its presence in processed cheese is primarily responsible for the smooth melting property of American cheese.",
+      what_to_do: "Green light. A safe sodium salt with no significant health concerns beyond sodium intake. Found in processed cheese, flavored drinks, and some candies. Count toward sodium intake if on a sodium-restricted diet."
+    },
+    "potassium citrate": {
+      name: "Potassium Citrate",
+      aliases: ["e332", "tripotassium citrate"],
+      rating: "green",
+      banned_in: [],
+      description: "Potassium citrate is the potassium salt of citric acid, used as an acidity regulator, preservative, and potassium supplement in beverages, candies, and dietary supplements. Medically, it's used to treat kidney stones and gout. In food, it's primarily a clean acidity regulator that also contributes to potassium intake — beneficial for most people. People with kidney disease or taking potassium-affecting medications should monitor total potassium intake across food and supplements. Otherwise, no concerns.",
+      what_to_do: "Green light for most people. Beneficial as a potassium source. Caution for kidney disease patients managing potassium levels. Found in sports drinks, low-acid orange juice, and some confectionery."
+    },
+    "acetylated monoglycerides": {
+      name: "Acetylated Mono- and Diglycerides (ACETEM)",
+      aliases: ["acetem", "e472a", "acetic acid esters of monoglycerides"],
+      rating: "yellow",
+      banned_in: [],
+      description: "Acetylated mono- and diglycerides are emulsifiers made from acetic acid and mono/diglycerides, used to improve texture and shelf life in margarines, bread, and shortenings. Like regular mono- and diglycerides, they can contain trans fats without being counted in the trans fat line on nutrition labels — the same regulatory loophole as their parent compounds. They're more water-soluble than regular monoglycerides and used when both oil-water emulsification and coating properties are needed. Approved worldwide, but the hidden trans fat concern applies.",
+      what_to_do: "Same guidance as mono- and diglycerides. Be aware that 0g trans fat claims can coexist with these additives. Check bread, margarine, and commercial baked goods."
+    },
+    "propylene glycol alginate": {
+      name: "Propylene Glycol Alginate (PGA)",
+      aliases: ["e405", "pga"],
+      rating: "yellow",
+      banned_in: ["EU restricts in some applications"],
+      description: "Propylene glycol alginate is made by treating alginic acid (from seaweed) with propylene oxide, creating an acid-stable thickener used in beer, salad dressings, ice cream, and pickled products. It's particularly useful in acidic environments where regular alginates break down. The compound contains propylene glycol esterified to alginate — contributing a small amount of propylene glycol to the diet. At typical food use levels, this is considered safe. The EU restricts its use more cautiously than the FDA. Generally a moderate-concern additive — the alginate component is clean but the propylene glycol modification adds caution.",
+      what_to_do: "Moderate concern. The propylene glycol component adds a note of caution above pure alginate. Found in beer foam stabilizers, some salad dressings, and certain processed foods. Not a primary concern at typical food levels."
+    },
+    "tartaric acid": {
+      name: "Tartaric Acid",
+      aliases: ["e334", "l-tartaric acid", "racemic acid"],
+      rating: "green",
+      banned_in: [],
+      description: "Tartaric acid is a naturally occurring organic acid found in grapes, tamarind, and bananas, and is a byproduct of winemaking. As a food additive, it's used as an acidity regulator and flavor enhancer in beverages, candy, and baked goods. It's the compound responsible for the crisp tartness in good wine and many sour confections. Completely safe at all realistic dietary levels — it's been consumed by humans in grape-based products for thousands of years. The cream of tartar (potassium bitartrate) used in baking is its potassium salt. No concerns.",
+      what_to_do: "Green light. A naturally derived fruit acid with no safety concerns. Found in beverages, candy, and some baked goods."
+    },
+
+    // === ADDITIONAL ENTRIES TO REACH 200+ ===
+    "caramel flavoring": {
+      name: "Caramel Flavoring",
+      aliases: ["caramel flavor", "natural caramel flavor", "caramel extract"],
+      rating: "yellow",
+      banned_in: [],
+      description: "Caramel flavoring is distinct from caramel color (E150a-d) — it's used for taste rather than color. Made by heating sugars, it's used in baked goods, beverages, ice cream, and candy. Unlike caramel color made with ammonia compounds (Class III/IV), basic caramel flavoring doesn't carry the same 4-MEI concern. However, the term 'caramel flavoring' can cover a wide range of products made with different methods and sugar sources, and labeling doesn't require disclosure of the process. Generally low concern on its own, but transparency is limited.",
+      what_to_do: "Generally low concern. Lower risk than Class III/IV caramel color. Found in beverages, baked goods, and candies. If you're concerned about caramel color specifically, check whether the label says 'caramel color' vs. 'caramel flavoring' — they're different additives."
+    },
+    "smoke flavoring": {
+      name: "Smoke Flavoring (Liquid Smoke)",
+      aliases: ["liquid smoke", "smoke flavor", "natural smoke flavor", "hickory smoke"],
+      rating: "yellow",
+      banned_in: ["EU (restricted)"],
+      description: "Smoke flavoring is produced by condensing the compounds from burning wood into a liquid, then purifying and concentrating it. It contains polycyclic aromatic hydrocarbons (PAHs) and other compounds formed during combustion — some of which are carcinogenic. The EU reviews and restricts smoke flavorings extensively because of PAH content, requiring safety evaluations for each approved product. The FDA has less stringent oversight. The dose of PAHs from liquid smoke in food is generally much lower than from actual grilling/smoking, and the risk is dose-dependent. It's used in processed meats, sauces, and snacks to provide a smoky taste without actual smoking.",
+      what_to_do: "Moderate concern. Less PAH exposure than charcoal grilling, but the carcinogenic compounds are present. The EU's more cautious approach is reasonable. Check processed meats, barbecue sauces, and smoked-flavored chips. Occasional exposure is low-risk; regular consumption of multiple liquid-smoke containing products is worth moderating."
+    },
+    "ammonium sulfate": {
+      name: "Ammonium Sulfate",
+      aliases: ["e517", "diammonium sulfate"],
+      rating: "yellow",
+      banned_in: [],
+      description: "Ammonium sulfate is primarily used as a nitrogen fertilizer in agriculture, but in food it's permitted as a dough conditioner in bread production. As a nitrogen source, it provides yeast with nutrients during fermentation. At the levels used in bread-making, it leaves essentially no residue in the final product after baking. The FDA considers it safe. The concern is less about direct toxicity and more about the fact that this is an industrial fertilizer-grade chemical being used in food, with limited consumer awareness. Also used in Subway bread (along with azodicarbonamide before its removal).",
+      what_to_do: "Low practical concern in bread. The residual levels in baked products are negligible. Its presence signals industrially scaled bread production. If you want to avoid it, artisan breads typically use only flour, water, salt, and yeast."
+    },
+    "potassium iodate": {
+      name: "Potassium Iodate",
+      aliases: ["iodate", "potassium iodate flour"],
+      rating: "yellow",
+      banned_in: ["EU", "Canada", "Australia", "New Zealand"],
+      description: "Potassium iodate is used as a flour improver and dough conditioner in some commercial breads in the US. Unlike potassium iodide (safe and used in iodized salt), potassium iodate can form iodate residues in baked bread. The EU, Canada, Australia, and New Zealand have banned it from bread. The concern is that iodate residues are reduced but not fully eliminated during baking, and excess iodine can trigger thyroid dysfunction. At the levels found in iodate-treated bread, most healthy people are unaffected, but people with thyroid conditions (especially Hashimoto's thyroiditis and Graves' disease) may be sensitive to fluctuating iodine intake.",
+      what_to_do: "Check bread ingredient lists if you have thyroid disease — look for 'potassium iodate' or 'iodate' as a flour improver. For general population, low concern at typical bread consumption. Banned in most peer countries; worth avoiding in favor of brands using potassium bromate-free and iodate-free formulations."
+    },
+    "l-cysteine": {
+      name: "L-Cysteine",
+      aliases: ["cysteine", "e920", "l-cysteine hydrochloride"],
+      rating: "yellow",
+      banned_in: [],
+      description: "L-cysteine is an amino acid used as a dough conditioner in commercial bread and baked goods to improve elasticity and reduce mixing time. The issue: L-cysteine used in food production is often derived from human hair collected from barbershops in Asia, or from duck/chicken feathers. This is legal and FDA-approved, but rarely disclosed. Synthetic L-cysteine is also produced, and some manufacturers use plant-derived sources, but the hair-derived form remains common. Vegetarians, vegans, and some religious dietary practitioners object to this unlabeled source. Chemically, all forms are identical.",
+      what_to_do: "Not a health concern, but a transparency concern. If you keep kosher, halal, or vegan, L-cysteine in commercial bread may violate dietary principles depending on its source, which isn't required to be disclosed. Check with manufacturers if this matters to your diet. Found in most commercially produced bread."
+    },
+    "silicon dioxide food": {
+      name: "Amorphous Silica (Aerosil)",
+      aliases: ["fumed silica", "aerosil", "cab-o-sil", "synthetic amorphous silica"],
+      rating: "yellow",
+      banned_in: [],
+      description: "Fumed or precipitated amorphous silica is a specific industrial form of silicon dioxide used as an anti-caking agent in powdered foods, spices, and supplements. Unlike natural crystalline silica (quartz, which causes silicosis), amorphous silica doesn't cause lung disease. However, EFSA conducted a review in 2018 and could not establish an acceptable daily intake due to insufficient data on long-term effects of synthetic nano-sized silica particles in food. The nanoparticle form in some commercial products has raised concerns about gut epithelial effects that standard-size silica doesn't have. This is distinct from naturally occurring silicon dioxide.",
+      what_to_do: "Low concern for most people, but the EFSA uncertainty about nanoparticle forms is worth noting. Found in powdered supplements, spice blends, and protein powders. If minimizing novel nanoparticle exposure is a priority, look for products without listed silicon dioxide."
+    },
+    "potassium metabisulfite": {
+      name: "Potassium Metabisulfite",
+      aliases: ["e224", "potassium pyrosulfite"],
+      rating: "yellow",
+      banned_in: ["US: banned from fresh produce since 1986"],
+      description: "Potassium metabisulfite is a sulfite preservative used in wine, dried fruit, fruit juices, and pickled products. Like all sulfites, it can trigger asthmatic reactions and allergic responses in sulfite-sensitive individuals — an estimated 1% of the population and up to 5% of people with asthma. The 1986 FDA ban on sulfites in fresh produce came after multiple deaths in sulfite-sensitive individuals who consumed produce treated with sulfites at salad bars. Potassium metabisulfite releases sulfur dioxide when dissolved, which is the active preserving compound.",
+      what_to_do: "Critical if you have asthma. Check wine (required to label 'contains sulfites'), dried fruit, and pickled products. Organic dried fruit often uses less sulfites. If you experience headaches, flushing, or breathing difficulty after wine or dried fruit, sulfite sensitivity is likely."
+    },
+    "fermented cane sugar": {
+      name: "Fermented Cane Sugar (Dextrose from Fermentation)",
+      aliases: ["fermented sugar", "cane sugar syrup"],
+      rating: "yellow",
+      banned_in: [],
+      description: "Fermented cane sugar refers to sugar that has undergone fermentation, producing compounds like lactic acid and ethanol beyond simple sucrose. In food production, it may be used to add complex flavor notes and mild preservation effects. The 'fermented' label can make a simple sugar sound more artisanal or health-forward than it is. Fermented sugars still contribute to total added sugar intake. The fermentation byproducts (organic acids) may have mild prebiotic effects but at the levels found in processed foods, the benefit is minimal. Don't confuse with genuinely fermented traditional foods like kombucha or kefir.",
+      what_to_do: "Treat as added sugar. The 'fermented' label doesn't make it meaningfully healthier than regular added sugar for most purposes. Count it toward total daily added sugar intake."
+    },
+    "tapioca starch": {
+      name: "Tapioca Starch / Tapioca Flour",
+      aliases: ["tapioca", "cassava starch", "manioc starch"],
+      rating: "green",
+      banned_in: [],
+      description: "Tapioca starch is derived from the cassava root (Manihot esculenta) and used as a thickener, binder, and gluten-free flour substitute. It's naturally gluten-free and well-tolerated by most people. As a refined starch, it has a high glycemic index (similar to white flour) and minimal nutritional value beyond carbohydrates. However, it doesn't carry the concerns of chemical modification that modified food starches do — it's typically processed mechanically rather than chemically. Used widely in gluten-free baking, bubble tea, and Asian cuisines. Generally clean and safe.",
+      what_to_do: "Green light. A clean, naturally derived starch with no significant health concerns. High glycemic index means blood sugar impact is similar to white flour — worth noting for diabetics, but not a reason to avoid for most people."
+    },
+    "arrowroot starch": {
+      name: "Arrowroot Starch",
+      aliases: ["arrowroot flour", "arrowroot powder", "maranta arundinacea"],
+      rating: "green",
+      banned_in: [],
+      description: "Arrowroot starch is derived from the rhizomes of the arrowroot plant (Maranta arundinacea), a tropical plant native to South America. It's used as a thickener in sauces, gravies, puddings, and gluten-free baking. It thickens at lower temperatures than cornstarch and produces a clearer, more transparent gel. Traditionally used in digestive bland diets. It's naturally gluten-free, easily digestible, and has a very good safety profile. Unlike cornstarch (often from GMO corn), arrowroot is usually non-GMO. One of the cleanest thickeners available.",
+      what_to_do: "Green light. A very clean thickener with good digestive tolerance. Particularly useful for people with sensitive digestive systems. No concerns."
+    },
+    "resistant starch": {
+      name: "Resistant Starch",
+      aliases: ["high-amylose corn starch", "hi-maize", "resistant dextrin", "resistant wheat starch"],
+      rating: "green",
+      banned_in: [],
+      description: "Resistant starch is a type of starch that resists digestion in the small intestine and reaches the colon, where it's fermented by gut bacteria — acting as a prebiotic fiber. It's naturally found in green bananas, cooked and cooled potatoes, legumes, and whole grains. As a food additive, it's extracted and added to baked goods, cereals, and supplements to boost fiber content. It improves insulin sensitivity, increases satiety, lowers blood sugar response, and feeds beneficial gut bacteria. Strong research base for metabolic and digestive health benefits. Generally well-tolerated.",
+      what_to_do: "Green light — genuinely beneficial. Resistant starch is one of the most health-promoting dietary fibers. Its presence in a product as an added fiber is a positive signal. May cause initial gas/bloating if your gut bacteria aren't used to it — introduce gradually."
+    },
+    "succinic acid": {
+      name: "Succinic Acid",
+      aliases: ["e363", "amber acid", "butanedioic acid"],
+      rating: "green",
+      banned_in: [],
+      description: "Succinic acid is a naturally occurring organic acid found in small amounts in many foods including wine, vegetables, and fruits. It's also an intermediate in the Krebs cycle (cellular energy production). As a food additive, it's used as a flavoring and acidity regulator in beverages, candy, and fermented foods. It provides a mild tart, slightly umami taste. Safety profile is excellent — it's approved worldwide and no health concerns have been identified at food use levels. One of the more benign food acids.",
+      what_to_do: "Green light. A naturally occurring food acid with no safety concerns. Found in some candies, beverages, and fermented products."
+    },
+    "d-ribose": {
+      name: "D-Ribose",
+      aliases: ["ribose", "d-ribose sugar"],
+      rating: "green",
+      banned_in: [],
+      description: "D-ribose is a naturally occurring five-carbon sugar found in all living cells as a component of RNA and ATP (the energy currency of cells). As a food supplement and additive, it's used in sports nutrition products to support ATP regeneration and energy recovery. Unlike glucose, ribose doesn't contribute significantly to blood sugar spikes and has a very low glycemic index. It's generally well-tolerated and considered safe. Some research suggests it may benefit people with certain heart conditions and chronic fatigue syndrome by supporting cellular energy production.",
+      what_to_do: "Green light. A naturally occurring sugar with an interesting functional profile for energy metabolism. Found primarily in sports and performance nutrition products. No significant safety concerns."
+    },
+    "glycine": {
+      name: "Glycine",
+      aliases: ["e640", "aminoacetic acid"],
+      rating: "green",
+      banned_in: [],
+      description: "Glycine is the simplest amino acid, naturally found in high amounts in collagen-rich foods (bone broth, skin, connective tissue). As a food additive, it's used as a flavoring agent (mildly sweet), pH adjuster, and nutrient. Glycine has numerous beneficial roles in physiology — it's a precursor to glutathione (the body's master antioxidant), supports collagen synthesis, may improve sleep quality, and helps regulate blood sugar. It's essentially a nutritional amino acid being used as a food additive. No safety concerns. The body produces glycine endogenously and dietary supplementation is safe at substantial doses.",
+      what_to_do: "Green light — actually beneficial. One of the few food additives that's genuinely health-promoting. No concerns."
+    },
+    "hyaluronic acid": {
+      name: "Hyaluronic Acid (Sodium Hyaluronate)",
+      aliases: ["sodium hyaluronate", "ha", "hyaluronidase substrate"],
+      rating: "green",
+      banned_in: [],
+      description: "Hyaluronic acid is a naturally occurring glycosaminoglycan found throughout the body, particularly in joints, eyes, and skin. It's increasingly added to beverages, gummies, and supplements as a functional ingredient for joint and skin health. It's also used as a thickener and humectant in some food applications. Oral hyaluronic acid has reasonable evidence for improving knee osteoarthritis symptoms and some evidence for skin hydration. As a food additive, it's generally recognized as safe. Well-tolerated with no known toxicity at dietary doses.",
+      what_to_do: "Green light. A naturally occurring compound with genuine health function. Its presence in food products is a positive differentiator if joint or skin health benefits are desired. No concerns."
+    },
+    "glucosamine": {
+      name: "Glucosamine",
+      aliases: ["glucosamine sulfate", "glucosamine hydrochloride", "n-acetylglucosamine"],
+      rating: "yellow",
+      banned_in: [],
+      description: "Glucosamine is an amino sugar naturally found in cartilage and shellfish shells, used as a supplement and occasionally as a functional food ingredient. It's widely used for joint health support. The evidence for glucosamine in treating osteoarthritis is mixed — some studies show benefit, others don't. Safety profile is generally good. Key concerns: it's typically derived from shellfish shells and is not suitable for people with shellfish allergies. There are also potential interactions with warfarin (blood thinner) and possible blood sugar effects in diabetics at supplement doses. At food ingredient levels, these concerns are lower than at supplement doses.",
+      what_to_do: "Shellfish allergy = avoid. If you're on blood thinners or managing blood sugar, check with your doctor before regular glucosamine consumption. At typical food fortification levels (much lower than supplements), concerns are minimal for most people."
+    },
+    "choline bitartrate": {
+      name: "Choline (Choline Bitartrate / Choline Chloride)",
+      aliases: ["choline", "choline chloride", "choline bitartrate", "choline l-bitartrate"],
+      rating: "green",
+      banned_in: [],
+      description: "Choline is an essential nutrient found naturally in eggs, meat, fish, and cruciferous vegetables. Most people don't get enough — it's estimated that 90% of Americans are deficient. As a food additive, it's used to fortify cereals, infant formula, and functional foods. Choline is critical for liver function, brain development (especially prenatal), neurotransmitter synthesis, and cell membrane integrity. At typical food fortification levels, it's completely safe. Very high doses (several grams daily from supplements) can cause a fishy body odor, but this is not a food concern.",
+      what_to_do: "Green light — often beneficial, especially for pregnant women and infants. Choline fortification in infant formula and baby food addresses a real nutritional gap. No concerns at food use levels."
+    },
+    "oleic acid": {
+      name: "Oleic Acid",
+      aliases: ["e570 (as fatty acid)", "octadecenoic acid"],
+      rating: "green",
+      banned_in: [],
+      description: "Oleic acid is the primary monounsaturated fatty acid in olive oil and many other plant and animal fats. As a food additive, it's used as a glazing agent, carrier for flavors, and in food-grade lubricants. Oleic acid is associated with numerous health benefits — it's the fatty acid credited with many of olive oil's cardiovascular benefits, including raising HDL cholesterol and reducing inflammation. No toxicity concerns at any realistic dietary level. Its presence as an additive is neutral to beneficial.",
+      what_to_do: "Green light. A naturally occurring monounsaturated fat with well-documented health benefits. No concerns."
+    },
+    "coconut oil": {
+      name: "Coconut Oil / Fractionated Coconut Oil",
+      aliases: ["mct oil", "medium chain triglycerides", "fractionated coconut oil", "caprylic acid", "capric acid"],
+      rating: "green",
+      banned_in: [],
+      description: "Coconut oil and its refined derivatives (fractionated coconut oil, MCT oil) are used as carrier oils, fat sources, and texture agents in food. Coconut oil is high in saturated fat — particularly medium-chain triglycerides (MCTs) — which has sparked debate about cardiovascular effects. Unlike long-chain saturated fats (from meat), MCTs are metabolized differently, going directly to the liver for energy rather than being stored. The saturated fat debate around coconut oil is genuinely unsettled. MCT oil (pure caprylic and capric acid) has stronger evidence for sustained energy and mild cognitive benefits. At typical food use levels, no immediate concerns.",
+      what_to_do: "Moderate in overall consumption given saturated fat content. MCT oil specifically has a better research profile than whole coconut oil. As a food additive or carrier oil, the amounts involved are typically small. No concerns at typical food use levels."
+    },
+    "palm oil": {
+      name: "Palm Oil / Palm Kernel Oil",
+      aliases: ["vegetable oil (palm)", "palm kernel oil", "palmitate", "palmitoyl"],
+      rating: "yellow",
+      banned_in: [],
+      description: "Palm oil is extracted from the fruit of oil palms (Elaeis guineensis) and is the world's most widely used vegetable oil — in about half of all packaged consumer products. It's high in palmitic acid, a saturated fat linked to LDL cholesterol elevation and cardiovascular risk. Beyond health concerns, palm oil production is the leading driver of tropical deforestation (particularly in Indonesia and Malaysia), destroying orangutan, tiger, and other endangered species' habitats. Sustainable palm oil (RSPO-certified) exists but covers a small fraction of total production. It replaced partially hydrogenated oils when trans fats were banned — which doesn't make it healthy, just less acutely harmful.",
+      what_to_do: "Limit intake. Check ingredient lists — it appears as 'palm oil,' 'palm kernel oil,' 'palmitate,' or simply 'vegetable oil.' For both health and environmental reasons, prefer products using sunflower, olive, or avocado oil alternatives. If you must use palm oil products, look for RSPO Certified Sustainable Palm Oil."
+    },
+    "refined coconut oil": {
+      name: "Hydrogenated Coconut Oil / Palm Kernel Oil",
+      aliases: ["hydrogenated coconut oil", "hydrogenated palm kernel oil", "hydrogenated palm oil"],
+      rating: "yellow",
+      banned_in: [],
+      description: "When coconut or palm kernel oil is fully (not partially) hydrogenated, it becomes a solid fat with a very long shelf life. Unlike partially hydrogenated oils (banned), fully hydrogenated oils don't contain significant trans fats — the hydrogenation goes to completion, creating saturated fats instead. However, the resulting product is very high in saturated fat. Fully hydrogenated coconut/palm kernel oil is used in commercial baked goods, coffee creamers, and candy coatings as a cheaper alternative to cocoa butter. It's better than partially hydrogenated oils but still contributes to high saturated fat intake.",
+      what_to_do: "Better than partially hydrogenated oils (no trans fats), but still high in saturated fat. Check non-dairy creamers, commercial cookies, and candy coatings. Moderate overall saturated fat intake from all sources."
+    },
+    "confectioners shellac": {
+      name: "Confectioner's Glaze (Non-Shellac)",
+      aliases: ["vegetable-based confectioner's glaze", "carnauba glaze", "food-grade wax coating"],
+      rating: "green",
+      banned_in: [],
+      description: "Some products use plant-based coating agents instead of shellac or beeswax for candy glazing — typically carnauba wax, vegetable oil, or plant-derived wax blends. These provide the same shiny protective coating as shellac without the insect-derived component, making them suitable for vegans. The specific compounds involved vary by manufacturer but are generally low-concern. When a label says 'confectioner's glaze,' it may be shellac (insect-derived) or plant-based — manufacturers may need to be contacted to clarify.",
+      what_to_do: "Generally no health concern. If vegan or following certain religious dietary laws, contact the manufacturer to clarify whether the confectioner's glaze is shellac (insect) or plant-derived. Carnauba or vegetable-based coatings are vegan-friendly."
+    },
+    "diphenyl": {
+      name: "Diphenyl (Biphenyl)",
+      aliases: ["biphenyl", "e230", "phenylbenzene"],
+      rating: "red",
+      banned_in: ["EU", "UK", "Australia", "Japan"],
+      description: "Diphenyl is a synthetic antifungal compound applied to the surface of citrus fruits (oranges, grapefruits, lemons) to prevent mold growth during transport and storage. Like Citrus Red 2, it remains on the peel — not the flesh — so it primarily affects those who use citrus zest or peel. Diphenyl is classified as possibly carcinogenic and has been banned in the EU, UK, Australia, and Japan. The FDA still permits it on US citrus. Studies show it inhibits the immune system in animal tests. When you zest non-organic citrus, you're potentially consuming this banned fungicide.",
+      what_to_do: "Buy organic citrus if you use the zest or peel. Wash conventional citrus fruit thoroughly before zesting, though washing doesn't remove everything. Check produce for 'treated with' disclosures. A banned substance in most developed countries still permitted on US produce."
+    },
+    "thiabendazole": {
+      name: "Thiabendazole (TBZ)",
+      aliases: ["tbz", "tecto", "e233"],
+      rating: "yellow",
+      banned_in: ["EU (restricted in food use)"],
+      description: "Thiabendazole is an antifungal chemical applied to citrus, banana skins, and potatoes to prevent mold and extend shelf life. Like other post-harvest fungicides, it stays on the skin/surface. At typical residue levels, the FDA considers it safe. The EU has significantly tightened MRL (Maximum Residue Limits) for thiabendazole. Research shows it's an endocrine disruptor at higher concentrations. For citrus, the concern is primarily about zest/peel use. For potatoes, the residue is primarily on the skin — peeling removes most of it.",
+      what_to_do: "Buy organic citrus if you use zest. Peel conventional potatoes to reduce exposure. Wash all produce thoroughly. Part of the broader 'produce pesticide' picture — largely hidden from consumers through inadequate labeling."
+    },
+    "potassium hydroxide": {
+      name: "Potassium Hydroxide (Lye)",
+      aliases: ["e525", "caustic potash", "koh"],
+      rating: "yellow",
+      banned_in: [],
+      description: "Potassium hydroxide (lye) is a strong alkali used as a pH adjuster in cocoa processing (alkalized/Dutch-process cocoa), some baked goods, and olives. In cocoa processing, it reduces acidity and creates the darker color of Dutch-process cocoa. Sodium hydroxide (E524) is used in pretzel production to create the distinctive crust. At the levels used after processing, the lye has been neutralized by reaction with food acids — no significant residual lye remains in properly processed foods. As with all lye-processed foods, the key is that the chemistry reaches completion during processing.",
+      what_to_do: "Generally safe in properly processed foods. Found in Dutch-process cocoa, some cereals, and pretzels. The processing neutralizes the lye before consumption. No concern at food use levels."
+    },
+    "ferric ammonium citrate": {
+      name: "Ferric Ammonium Citrate",
+      aliases: ["iron ammonium citrate", "e381"],
+      rating: "yellow",
+      banned_in: ["EU (restricted)"],
+      description: "Ferric ammonium citrate is an iron salt used as an anticaking agent in table salt and as a food colorant/iron supplement in some products. The EU restricts its use significantly. While iron supplementation is generally beneficial (iron deficiency is the most common nutritional deficiency), the ammonium component of this salt adds a note of caution. At typical food use levels, it's considered safe, but better forms of iron fortification (ferrous sulfate, ferrous gluconate) are available and more bioavailable. Its presence is uncommon in most foods.",
+      what_to_do: "Low concern at food use levels. Check ingredient lists on iodized salt products. Prefer iron fortification from ferrous sulfate or ferrous gluconate which are more bioavailable and have better safety profiles."
+    },
+    "triacetin": {
+      name: "Triacetin (Glycerol Triacetate)",
+      aliases: ["glycerol triacetate", "e1518", "glycerin triacetate"],
+      rating: "yellow",
+      banned_in: [],
+      description: "Triacetin is a solvent and flavoring agent derived from glycerol and acetic acid, used as a plasticizer in chewing gum, a carrier for flavors in candies and beverages, and in some baked goods. It breaks down to glycerol and acetic acid in the body. At food use levels, it's generally considered safe. However, it's also used in cigarette filters and as a pharmaceutical excipient, which some consumers find concerning context-wise. The EU limits its use in certain applications. No significant toxicity at food use levels, but it signals the product requires chemical solvents to carry flavor.",
+      what_to_do: "Low concern at typical food levels. Found primarily in chewing gum and some hard candies. The tobacco and pharmaceutical uses are irrelevant to food safety at these levels."
+    },
+    "ethanol": {
+      name: "Ethanol (Grain Alcohol in Food)",
+      aliases: ["ethyl alcohol", "alcohol", "grain alcohol", "spirits for cooking"],
+      rating: "yellow",
+      banned_in: [],
+      description: "Ethanol is used in trace amounts as a carrier for flavorings, colorings, and extracts in food products. Vanilla extract (the real kind) is typically 35% alcohol — which is why it's classified as a food ingredient rather than a beverage. Trace amounts in food from ethanol carriers are far below any pharmacological threshold. However, products that explicitly contain alcohol (rum cake, wine-marinated items, brandy-preserved fruits) may retain meaningful ethanol concentrations depending on preparation method. People who don't consume alcohol for religious, medical, or recovery reasons should check ingredient labels carefully.",
+      what_to_do: "At carrier concentrations in most foods, not a practical concern for most people. For those in alcohol recovery, following halal/certain religious diets, or with alcohol intolerance, carefully check products using natural vanilla, alcohol-based flavor carriers, or foods marinated with wine/beer/spirits."
+    },
+    "chlorophyll": {
+      name: "Chlorophyll / Chlorophyllin",
+      aliases: ["e140", "e141", "chlorophyllin", "sodium copper chlorophyllin", "copper chlorophyll"],
+      rating: "green",
+      banned_in: [],
+      description: "Chlorophyll is the natural green pigment in plants. As a food additive, it's used to provide green color in confectionery, beverages, and dairy products. The copper-containing form (sodium copper chlorophyllin, E141) is more stable but contains trace copper. Chlorophyll and chlorophyllin have been studied for antioxidant properties, possible anti-cancer effects, and wound healing. At food use levels, both are considered safe. Chlorophyllin supplements at very high doses may cause green discoloration of urine or stool (harmless). A genuinely clean natural colorant.",
+      what_to_do: "Green light. One of the cleanest colorants available, derived from plants, with potential health benefits. No concerns at food use levels."
+    },
+    "riboflavin": {
+      name: "Riboflavin (Vitamin B2)",
+      aliases: ["vitamin b2", "e101", "riboflavin 5 phosphate", "lactoflavin"],
+      rating: "green",
+      banned_in: [],
+      description: "Riboflavin is vitamin B2, an essential nutrient that also provides a natural yellow-orange color used as a food dye (E101). It's used as both a nutritional fortifier and a colorant in beverages, dairy products, cereals, and supplements. Riboflavin is water-soluble and excess is excreted — it causes bright yellow urine at higher doses, which is harmless and expected. As a natural vitamin serving dual roles as nutrient and colorant, it's one of the most benign food additives possible. Approved worldwide with no safety concerns.",
+      what_to_do: "Green light. A naturally occurring vitamin serving as a colorant. Its yellow color is used in some beverages as an alternative to synthetic yellow dyes. No concerns — genuinely nutritious."
+    },
+    "carbonated water": {
+      name: "Carbonated Water / CO2 (Carbon Dioxide)",
+      aliases: ["carbonated water", "carbon dioxide", "e290", "sparkling water", "fizzy water"],
+      rating: "green",
+      banned_in: [],
+      description: "Carbon dioxide (CO2) dissolved in water creates carbonic acid, giving sparkling water and sodas their fizz. The carbonation itself is generally safe — the carbonic acid is very weak and doesn't damage teeth significantly unless combined with other acids (like phosphoric acid in cola) or sugars. Some concerns exist about carbonated water and bone density, but research consistently shows plain carbonated water has no effect on bone density — only cola drinks with phosphoric acid and caffeine show this association. People with IBS may find carbonation aggravates gas and bloating.",
+      what_to_do: "Green light for plain sparkling water. For people with IBS or gas-related symptoms, carbonated beverages may aggravate symptoms. The bone density concern is a myth for plain sparkling water — only confirmed for phosphoric acid-containing cola drinks."
+    },
+    "acetic acid": {
+      name: "Acetic Acid (Vinegar)",
+      aliases: ["e260", "ethanoic acid", "vinegar acid"],
+      rating: "green",
+      banned_in: [],
+      description: "Acetic acid is the compound that gives vinegar its characteristic flavor and preservative properties. As a food additive, it's used as an acidity regulator, preservative, and flavor in pickles, sauces, condiments, and baked goods. It's completely safe at food use levels and has been used for thousands of years. Research suggests vinegar consumption may improve insulin sensitivity and lower blood sugar response to meals. It can damage tooth enamel with direct frequent contact, which is why drinking undiluted vinegar is inadvisable — but at normal food use levels, this isn't a concern.",
+      what_to_do: "Green light. One of the safest food additives available. Its presence as a preservative is a positive sign — it's a natural, safe alternative to synthetic preservatives."
+    },
+    "adipic acid": {
+      name: "Adipic Acid",
+      aliases: ["e355", "hexanedioic acid"],
+      rating: "green",
+      banned_in: [],
+      description: "Adipic acid is a dicarboxylic acid used as an acidulant, leavening agent, and flavor enhancer in powdered drink mixes, gelatin desserts, baking powder, and candy. It provides a mildly tart flavor. Naturally present in small amounts in beets and sugarcane. Despite being mostly produced industrially from petroleum-derived cyclohexane, it's considered safe at food use levels by FDA and EFSA. It breaks down to normal metabolic intermediates in the body. Low concern.",
+      what_to_do: "Green light. A safe food acid at typical use levels. Found in gelatin desserts, powdered drink mixes, and commercial baking powder blends."
+    },
+    "stannous chloride": {
+      name: "Stannous Chloride (Tin)",
+      aliases: ["tin ii chloride", "e512", "tin chloride"],
+      rating: "yellow",
+      banned_in: ["EU (restricted)"],
+      description: "Stannous chloride is a tin-based antioxidant used in canned asparagus and some other canned vegetables to maintain color and prevent discoloration. Tin compounds can be toxic at higher levels — this is why tinned food has residue limits. The FDA and EU set maximum residue limits for tin in canned foods. At permitted levels, it's considered safe for most people. However, it's a metal salt, and certain individuals (especially those with kidney issues) should be cautious about metallic food additives broadly. Its use is declining as can lining technology improves.",
+      what_to_do: "Low concern at typical food levels. Found primarily in canned white asparagus and some other specialty canned vegetables. If you eat large amounts of canned foods, ensuring cans are properly lined (BPA-free) is a higher priority."
+    },
+    "calcium acetate": {
+      name: "Calcium Acetate",
+      aliases: ["e263", "acetate of lime"],
+      rating: "green",
+      banned_in: [],
+      description: "Calcium acetate is a calcium salt of acetic acid, used as a preservative, acidity regulator, and firming agent in bread, pickled products, and some beverages. It provides a calcium source while performing a preservative function. It's also used medically to treat hyperphosphatemia (high phosphate levels) in dialysis patients by binding phosphate in the gut — ironically the opposite concern from most phosphate additives. At food use levels, it's completely safe and can contribute beneficially to calcium intake.",
+      what_to_do: "Green light. A safe preservative that also provides calcium. Found in some bread products and pickled items. No concerns."
+    },
+    "phytic acid": {
+      name: "Phytic Acid (Phytate)",
+      aliases: ["phytate", "inositol hexaphosphate", "ip6"],
+      rating: "yellow",
+      banned_in: [],
+      description: "Phytic acid is a naturally occurring compound in whole grains, legumes, nuts, and seeds — it's actually a plant-based phosphorus storage molecule. It's an antinutrient that binds to minerals (zinc, iron, calcium, magnesium) in the gut and reduces their absorption. This is why whole grain diets, while nutritious overall, can sometimes lead to mineral deficiencies if not balanced. Traditional food preparation (soaking, sprouting, fermentation) significantly reduces phytate content. Phytic acid also has antioxidant properties and may have anti-cancer effects. It's a complex nutrient — simultaneously an antinutrient and beneficial compound.",
+      what_to_do: "Context-dependent. In whole foods, phytate comes with the full nutritional profile that mitigates its antinutrient effects. If you eat a very high whole-grain/legume diet and are at risk for iron or zinc deficiency, traditional preparation methods (soaking, sprouting, fermenting) significantly reduce phytate. Not a reason to avoid whole grains — just context for balanced eating."
+    },
+    "oxalic acid": {
+      name: "Oxalic Acid (Oxalate)",
+      aliases: ["oxalate", "e261 (potassium oxalate)", "e261"],
+      rating: "yellow",
+      banned_in: [],
+      description: "Oxalic acid is a naturally occurring compound in many plant foods — spinach, beets, nuts, chocolate, and tea are high-oxalate foods. It binds calcium, iron, and other minerals in the gut, reducing their absorption (similar to phytic acid). At very high concentrations (found in rhubarb leaves), oxalate is toxic. In food amounts from vegetables, it's a normal dietary component for most people. However, people who form calcium oxalate kidney stones (the most common type) are often advised to limit high-oxalate foods — dietary oxalate directly contributes to stone formation risk in susceptible individuals.",
+      what_to_do: "For most people: no concern. For people with recurrent calcium oxalate kidney stones: consult a dietitian about oxalate restriction. High-oxalate foods (spinach, almonds, beets, sweet potatoes, chocolate) aren't inherently bad — cooking and calcium co-consumption reduces absorption."
+    },
+    "gluten": {
+      name: "Gluten (Wheat Gluten)",
+      aliases: ["vital wheat gluten", "wheat protein", "seitan", "wheat starch"],
+      rating: "yellow",
+      banned_in: [],
+      description: "Gluten is the network of proteins (gliadin and glutenin) in wheat that gives bread its elasticity and chew. As a food additive, vital wheat gluten is added to bread, low-gluten flour products, and plant-based meat to improve structure. For people with celiac disease (about 1% of the population), gluten triggers an autoimmune intestinal attack causing serious damage. For people with non-celiac gluten sensitivity (possibly 6-10%), it causes symptoms without the autoimmune damage. For the majority with no sensitivity, gluten is safe. The key: 'gluten-free' doesn't mean healthier for non-sensitive individuals.",
+      what_to_do: "For celiac disease: strict avoidance is medically necessary. For non-celiac sensitivity: avoidance based on symptom response. For everyone else: not a concern — gluten in whole grain foods comes with fiber and nutrients that benefit health. 'Gluten-free' processed foods are often more processed and less nutritious than their gluten-containing counterparts."
     }
   };
 
